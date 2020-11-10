@@ -1,20 +1,25 @@
-import { Layout } from '../../../component/layout/Layout'
 import marked from 'marked';
-
-import { DetailStyle, markdownStyle } from '../../../styles/ui/dairyreport'
-
+import { markdownStyle } from '../../../styles/ui/dairyreport'
+import { Heading } from '../../../component/atoms/Heading'
 import { DairyreportContent } from '../../../props/props' 
+import css from '../../../styles/style/markdown.scss'
 
 const Post = (props: DairyreportContent) => {
-  const classes = DetailStyle()
   const r: marked.Renderer = markdownStyle()
   const md: string = marked(props.post.contents, {renderer: r})
   const pubDate = props.post.pub_date.substring(0, 10)
   return (
-    <div className={classes.root}>
-        <h1>{pubDate}</h1>
-        <div className={classes.content} dangerouslySetInnerHTML={{ __html: md }} />
+    <div>
+      <div style={
+        { 
+          textAlign: 'center', 
+          marginTop: '50px', 
+        }}>
+        <Heading text={pubDate} />
+      </div>
+       <div className={css.main} dangerouslySetInnerHTML={{ __html: md }} />
     </div>
+    
   )
 }
 

@@ -5,9 +5,12 @@
     position: relative;
     text-align: center;
     h1 {
+        margin: 0 auto 0;
         font-size: $h3;
         font-weight: $thick;
         color: $theme_text;
+        width: 50%;
+        border-bottom: 2px solid $pink_kawaii;
     }
     p {
         margin-top: 10px;
