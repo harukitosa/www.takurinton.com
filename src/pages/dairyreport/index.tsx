@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router'
 import { Box } from '@material-ui/core'
 
-import { Layout } from '../../component/layout/Layout'
 import { Pagination } from '../../component/parts/Pagination'
 import { DairyreportContent } from '../../component/parts/Dairtreport'
 

@@ -1,6 +1,4 @@
 import Link from 'next/link'
-
-import { Layout } from '../component/layout/Layout'
 import { Pien } from '../component/Character/Pien'
 import { Gopher } from '../component/Character/Gopher'
 

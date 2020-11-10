@@ -10,18 +10,15 @@ import Typography from '@material-ui/core/Typography'
 
 import { HeaderStyle } from '../../styles/ui/header'
 
+import css from '../../styles/style/header.scss'
+
 export const Header = () => {
-    const classes = HeaderStyle()
     return (
-        <AppBar position="static" className={classes.root}>
-            <Toolbar>
-                <IconButton edge="start"  color="inherit" aria-label="menu">
-                </IconButton>
-                <Typography variant="h5" className={classes.title}>
-                    <Link href="/"><a className={classes.link}>takurinton.com</a></Link>
-                </Typography>
-            </Toolbar>
-        </AppBar>
+        <div className={css.header}>
+            <p className={css.title}>
+                <Link href="/"><a className={css.link}>takurinton.com</a></Link>
+            </p>
+        </div>
     )
 }
 
