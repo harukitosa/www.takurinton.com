@@ -1,4 +1,4 @@
-import css from '../../styles/style/main.scss'
+import css from '../../styles/style/home.scss'
 
 import { Twitter, GitHub, Facebook, Blog } from '../../component/parts/SNS'
 

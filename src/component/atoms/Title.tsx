@@ -1,17 +1,9 @@
-import { Typography } from '@material-ui/core'
+import css from '../../styles/style/text.scss'
 
 export const Title = (text: string) => {
     return (
-        <Typography>
+        <text id={css.title}>
             {text}
-        </Typography>
-    )
-}
-
-export const Heading = (text: string) => {
-    return (
-        <Typography>
-            {text}
-        </Typography>
+        </text>
     )
 }

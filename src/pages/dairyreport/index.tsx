@@ -1,32 +1,30 @@
-import { useRouter } from 'next/router'
-import { Box } from '@material-ui/core'
-
 import { Pagination } from '../../component/parts/Pagination'
 import { DairyreportContent } from '../../component/parts/Dairtreport'
 
 import { DairyreportProps } from '../../props/props'
 
-import dairyreport from '../../mock/dairyreport.json'
+// import dairyreport from '../../mock/dairyreport.json'
+import { Heading } from '../../component/atoms/Heading'
 
-import { DairyreportStyle } from '../../styles/ui/dairyreport'
+import css from '../../styles/style/dairyreport.scss'
+
 
 const Main = (props: DairyreportProps) => {
     console.log(props)
-    const classes = DairyreportStyle()
     const next = props.next 
     const prev = props.prev
     return (
-        <Box>
-            <h1 style={{ textAlign: "center" }}>dairyreport</h1>
-            <Box className={classes.root} >
-                <Box className={classes.items}>
+        <div className={css.main}>
+            <Heading text="Dairy report" />
+            <div className={css.home} >
+                <div className={css.items}>
                 {
                     props.results.map(p => (<DairyreportContent {...p} />))
                 }
-                </Box>   
+                </div>   
                 <Pagination next={String(next)} prev={String(prev)} />
-            </Box>
-        </Box>
+            </div>
+        </div>
     )
 }
 
