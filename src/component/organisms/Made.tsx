@@ -1,8 +1,7 @@
 import { MadeContent } from '../parts/MadeContent'
 
-import { Box } from '@material-ui/core'
 import { MadeProps } from '../../props/props'
-
+import { Heading } from '../atoms/Heading'
 const initialProps: MadeProps[] = [
     {
         id: 0, 
@@ -15,10 +14,11 @@ const initialProps: MadeProps[] = [
 
 export const Made = ({made = initialProps}) => {
     return (
-        <Box>
+        <div>
+            <Heading text="Made" />
             {
                 made.map(i => <MadeContent {...i} />)
             }
-        </Box>
+        </div>
     )
 }

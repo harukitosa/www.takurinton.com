@@ -1,7 +1,7 @@
 import { SkillContent } from '../parts/SkillContent'
 
-import { Box } from '@material-ui/core'
 import { SkillProps } from '../../props/props'
+import { Heading } from '../atoms/Heading'
 
 const initialProps: SkillProps[] = [
     {
@@ -12,10 +12,11 @@ const initialProps: SkillProps[] = [
 
 export const Skill = ({skill = initialProps}) => {
     return (
-        <Box>
+        <div>
+            <Heading text="Skill" />
             {
                 skill.map(i => <SkillContent {...i} />)
             }
-        </Box>
+        </div>
     )
 }

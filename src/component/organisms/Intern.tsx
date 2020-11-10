@@ -1,7 +1,7 @@
 import { InternProps } from '../../props/props'
 import { InternContent } from '../parts/InternContent'
 
-import { Box } from '@material-ui/core'
+import { Heading } from '../atoms/Heading'
 
 const initialProps: InternProps[] = [
     {
@@ -14,10 +14,11 @@ const initialProps: InternProps[] = [
 
 export const Intern = ({intern = initialProps}) => {
     return (
-        <Box>
+        <div>
+            <Heading text="Intern" />
             {
                 intern.map(i => <InternContent {...i} />)
             }
-        </Box>
+        </div>
     )
 }

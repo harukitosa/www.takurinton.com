@@ -1,14 +1,8 @@
-import Link from 'next/link'
-import { Box } from '@material-ui/core'
-
-import { Layout } from '../../component/layout/Layout'
 import { PortfolioProps } from '../../props/props'
-
 import { Intern } from '../../component/organisms/Intern'
 import { Skill } from '../../component/organisms/Skill'
 import { Made } from '../../component/organisms/Made'
 import { MineContent } from '../../component/parts/MineContent'
-
 // import portfolio from '../../mock/portfolio.json'
 
 const Profile = (props: PortfolioProps) => {
@@ -18,19 +12,12 @@ const Profile = (props: PortfolioProps) => {
     const mine = props.mine 
 
     return (
-        <Box>
-            <h1>intern</h1>
-            <Intern intern={intern} />
-            
-            <h1>skill</h1>
-            <Skill skill={skill} />
-
-            <h1>made</h1>
-            <Made made={made} />
-
-            <h1>mine</h1>
+        <div>
             <MineContent {...mine} />
-        </Box>
+            <Intern intern={intern} />
+            <Skill skill={skill} />
+            <Made made={made} />
+        </div>
     )
   }
 

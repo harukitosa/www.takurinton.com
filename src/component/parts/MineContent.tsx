@@ -1,14 +1,12 @@
 import { MineProps } from '../../props/props'
 
-import { Box, Typography } from '@material-ui/core'
-
+import { Heading } from '../atoms/Heading'
 
 export const MineContent = (mine: MineProps) => { 
     return (
-        <Box>
-            <Typography>
-                {mine.content}
-            </Typography>
-        </Box>
+        <div>
+            <Heading text="Self introduction" />
+            {mine.content}
+        </div>
     )
 }
