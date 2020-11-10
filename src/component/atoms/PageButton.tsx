@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from '@material-ui/core'
-
+import Link from 'next/link'
 export const PageButton = ({ css = '', to = '', char = '' }) => {
     return (
-        <Link variant="h5" className={css} href={to}>{char}</Link>
+        <Link href={{ pathname: '/dairyreport', query: { page: to } }}>
+            <a className={css}>{char}</a>
+        </Link>
     )
 }
