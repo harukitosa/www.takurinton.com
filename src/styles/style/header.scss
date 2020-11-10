@@ -1,18 +1,28 @@
 @import "../theme";
 
 .header {
-    margin-bottom: 3%; 
+    padding: 20px 20% 10px;
+    position: relative;
+    height: 100px; 
 }
 .title {
-    text-align: center;
+    padding-left: 20px;
+    float: left;
+    a {
+        color: $theme_text;
+        text-decoration: none;
+        font-size: $h4;
+    }
 }
-.link {
-    margin: 0 auto 0;
-    color: $theme_text;
-    font-size: $h4;
-    text-decoration: none;
+.page {
+    float: right;
+    padding-right: 20px;
+    a {
+        color: $theme_text;
+        text-decoration: none;
+        font-size: $h5;
+    }
 }
-
 @media (min-width: 750px) {
   
 }

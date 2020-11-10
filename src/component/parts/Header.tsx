@@ -16,7 +16,13 @@ export const Header = () => {
     return (
         <div className={css.header}>
             <p className={css.title}>
-                <Link href="/"><a className={css.link}>takurinton.com</a></Link>
+                <Link href="/"><a>takurinton.com</a></Link>
+            </p>
+            <p className={css.page}>
+                <Link href="/dairyreport"><a>dairyreport</a></Link>
+            </p>
+            <p className={css.page}>
+                <Link href="/profile"><a>profile</a></Link>
             </p>
         </div>
     )
