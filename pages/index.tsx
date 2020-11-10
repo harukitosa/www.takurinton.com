@@ -1,10 +1,20 @@
 import Link from 'next/link'
-export default function Main() { 
+
+import { Layout } from '../component/layout/Layout'
+import { Pien } from '../component/Character/Pien'
+import { Gopher } from '../component/Character/Gopher'
+
+
+const Main = () => {
     return (
-        <div>
-            <h1>This page is main</h1>
-            <p><Link href="/profile">mine</Link></p>
-            <p><Link href="/dairyreport/">dairyreport</Link></p>
-        </div>
+        <Layout>
+          <h1>This page is main</h1>
+          <Pien />
+          <Gopher />
+          <Link href="/profile"><a>profile</a></Link> <br />
+          <Link href="/dairyreport"><a>dairyreport</a></Link>
+        </Layout>
     )
 }
+
+export default Main

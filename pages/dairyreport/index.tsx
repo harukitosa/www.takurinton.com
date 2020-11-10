@@ -1,24 +1,37 @@
-import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { Box } from '@material-ui/core'
 
-const Main = (props) => (
-    <div>
-      <h1>takurinton</h1>
-      <ul>
-      {
-        props.results.map(p => (
-            <li key={p.id}>
-                <Link href="/dairyreport/post/[id]" as={`/dairyreport/post/${p.id}`}>
-                    <a>{p.pub_date}</a>
-                </Link>
-            </li>
-        ))
-      }
-      </ul>
-    </div>
-)
+import { Layout } from '../../component/layout/Layout'
+import { Pagination } from '../../component/parts/Pagination'
+import { DairyreportContent } from '../../component/parts/Dairtreport'
+
+import { DairyreportProps } from '../../props/props'
+
+import dairyreport from '../../mock/dairyreport.json'
+
+import { DairyreportStyle } from '../../styles/ui/dairyreport'
+
+const Main = (props: DairyreportProps) => {
+    const classes = DairyreportStyle()
+    const next = props.next 
+    const prev = props.prev
+    return (
+        <Layout>
+            <h1>dairyreport</h1>
+            <Box className={classes.root} >
+                <Box className={classes.items}>
+                {
+                    props.results.map(p => (<DairyreportContent {...p} />))
+                }
+                </Box>   
+                <Pagination next={String(next)} prev={String(prev)} />
+            </Box>
+        </Layout>
+    )
+}
 
 Main.getInitialProps = async () => {
-    const res = await fetch("https://api.takurinton.com/dairyreport/v1")
+    const res = await fetch(`https://api.takurinton.com/dairyreport/v1/`)
     return await res.json()
 }
 
