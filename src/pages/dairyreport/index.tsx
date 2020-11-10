@@ -16,7 +16,7 @@ const Main = (props: DairyreportProps) => {
     const next = props.next 
     const prev = props.prev
     return (
-        <Layout>
+        <Box>
             <h1>dairyreport</h1>
             <Box className={classes.root} >
                 <Box className={classes.items}>
@@ -26,7 +26,7 @@ const Main = (props: DairyreportProps) => {
                 </Box>   
                 <Pagination next={String(next)} prev={String(prev)} />
             </Box>
-        </Layout>
+        </Box>
     )
 }
 

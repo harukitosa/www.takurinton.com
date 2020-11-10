@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Box } from '@material-ui/core'
 
 import { Layout } from '../../component/layout/Layout'
 import { PortfolioProps } from '../../props/props'
@@ -17,7 +18,7 @@ const Profile = (props: PortfolioProps) => {
     const mine = props.mine 
 
     return (
-        <Layout>
+        <Box>
             <h1>intern</h1>
             <Intern intern={intern} />
             
@@ -29,7 +30,7 @@ const Profile = (props: PortfolioProps) => {
 
             <h1>mine</h1>
             <MineContent {...mine} />
-        </Layout>
+        </Box>
     )
   }
 

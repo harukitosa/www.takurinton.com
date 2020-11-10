@@ -12,12 +12,10 @@ const Post = (props: DairyreportContent) => {
   const md: string = marked(props.post.contents, {renderer: r})
   const pubDate = props.post.pub_date.substring(0, 10)
   return (
-    <Layout>
-      <div className={classes.root}>
-          <h1>{pubDate}</h1>
-          <Box className={classes.content} dangerouslySetInnerHTML={{ __html: md }} />
-      </div>
-    </Layout>
+    <Box className={classes.root}>
+        <h1>{pubDate}</h1>
+        <Box className={classes.content} dangerouslySetInnerHTML={{ __html: md }} />
+    </Box>
   )
 }
 

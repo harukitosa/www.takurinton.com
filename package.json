@@ -54,6 +54,7 @@
     "@types/react": "^16.9.56",
     "@zeit/next-sass": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
+    "babel-plugin-styled-components": "^1.11.1",
     "node-sass": "^5.0.0",
     "typescript": "^3.9.7"
   }
