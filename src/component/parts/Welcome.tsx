@@ -1,0 +1,17 @@
+import css from '../../styles/style/main.scss'
+
+import { Twitter, GitHub, Facebook, Blog } from '../../component/parts/SNS'
+
+export const Welcome = () => {
+    return (
+        <div className={css.main}>
+            <h1>たくりんとん</h1>
+            <p>GoとPythonが好きな大学生</p>
+            <Twitter />
+            <GitHub />
+            {/* <Facebook /> */}
+            <Blog />
+        </div>
+        
+    )
+}

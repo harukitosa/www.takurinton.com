@@ -1,0 +1,23 @@
+@import '../theme.scss';
+
+.main {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    h1 {
+        font-size: $h3;
+        font-weight: $thick;
+        color: $theme_text;
+    }
+    p {
+        margin-top: 10px;
+        font-size: $h4;
+        color: $theme_subtext;
+    }
+}
+
+.snsicon {
+    margin: 20px 30px 0;
+    height: 50px;
+    width: 50px;
+}

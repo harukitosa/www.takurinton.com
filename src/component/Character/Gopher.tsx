@@ -3,27 +3,21 @@ export const Gopher = () => {
         <div>
             <style>{`
             #main {
-                position: absolute;
+                position: relative;
                 margin: 0 auto 0;
-                height: 650px;
-                width: 600px;
+                height: 280px;
                 right: 0;
                 left: 0;
+                background: #7fd5ea;
             }
             
             #body {
                 margin: 0 auto 0;
                 position: absolute;
-                top: 20px;
                 right: 0;
                 left: 0;
-                height: 400px;
                 width: 350px;
-                border-top-left-radius: 100px;
-                border-top-right-radius: 100px;
-                background: rgb(107, 213, 252);
                 z-index: 1;
-                border: .1px solid black;
             }
             
             #eye-right, #eye-left {
@@ -31,8 +25,8 @@ export const Gopher = () => {
                 background: white;
                 height: 120px;
                 width: 120px;
+                top: 20px;
                 border-radius: 50%;
-                top: 60px;
                 border: .1px solid black;
             }
             #eye-right {
@@ -67,7 +61,7 @@ export const Gopher = () => {
                 height: 70px;
                 width: 110px;
                 clip-path: ellipse(25% 23% at 50% 41%);
-                top: 170px;
+                top: 130px;
                 right: 0;
                 left: 0;
                 z-index: 2;
@@ -78,7 +72,7 @@ export const Gopher = () => {
                 background: rgb(255, 215, 173);
                 height: 100px;
                 width: 100px;
-                top: 175px;
+                top: 135px;
                 right: 0;
                 left: 0;
                 border-radius: 50%;
@@ -91,7 +85,7 @@ export const Gopher = () => {
                 margin: 0 auto 0;
                 width: 70px;
                 height: 70px;
-                top: 225px;
+                top: 185px;
                 right: 0;
                 left: 0;
                 z-index: 0;
@@ -204,12 +198,6 @@ export const Gopher = () => {
             `}</style>
 
             <section id="main">
-                <section id="ear-left">
-                    <div id="ear-in"></div>
-                </section>
-                <section id="ear-right">
-                    <div id="ear-in"></div>
-                </section>
 
                 <section id="body">
                     <section id="eye-left">
