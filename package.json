@@ -32,7 +32,8 @@
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "dev": "next dev"
+    "dev": "next dev", 
+    "deploy": "aws s3 sync build/ s3://takurinton.com --exclude '*.DS_Store' --acl public-read --profile blog"
   },
   "eslintConfig": {
     "extends": "react-app"
