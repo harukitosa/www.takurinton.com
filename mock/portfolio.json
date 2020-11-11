@@ -1,0 +1,47 @@
+{
+    "intern": [
+        {
+            "id": 1,
+            "company_name": "楽天",
+            "period": "2020年9月15日~9月25日",
+            "overview": "Django, React, ハッカソン型"
+        },
+        {
+            "id": 2,
+            "company_name": "サイバーエージェント",
+            "period": "2020年9月3日~9月11日",
+            "overview": "Go, 就業型"
+        }
+    ],
+    "made": [
+        {
+            "id": 1,
+            "name": "interpreter",
+            "url": "https://github.com/takurinton/interpreter",
+            "explanation": "interpreter made with go"
+        },
+        {
+            "id": 1,
+            "name": "blog",
+            "url": "https://blog.takurinton.com/",
+            "explanation": "my blog"
+        }
+    ],
+    "skill": [
+        {
+            "id": "1",
+            "name": "Python"
+        },
+        {
+            "id": "2",
+            "name": "Django"
+        },
+        {
+            "id": "3",
+            "name": "React"
+        }
+    ],
+    "mine": {
+        "content": "フロントエンドとバックエンドが好き。"
+    }
+}
