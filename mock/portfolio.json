@@ -4,20 +4,20 @@
             "id": 1,
             "company_name": "楽天",
             "period": "2020年9月15日~9月25日",
-            "overview": "hogehoge"
+            "overview": "Django, React, ハッカソン型"
         },
         {
             "id": 2,
             "company_name": "サイバーエージェント",
             "period": "2020年9月3日~9月11日",
-            "overview": "道玄坂の緑の会社"
+            "overview": "Go, 就業型"
         }
     ],
     "made": [
         {
             "id": 1,
             "name": "interpreter",
-            "url": "https://github.com/takurinton/interperter",
+            "url": "https://github.com/takurinton/interpreter",
             "explanation": "interpreter made with go"
         },
         {
@@ -30,7 +30,7 @@
     "skill": [
         {
             "id": "1",
-            "name": "python"
+            "name": "Python"
         },
         {
             "id": "2",
@@ -42,6 +42,6 @@
         }
     ],
     "mine": {
-        "content": "my name is takurinton"
+        "content": "フロントエンドとバックエンドが好き。"
     }
 }

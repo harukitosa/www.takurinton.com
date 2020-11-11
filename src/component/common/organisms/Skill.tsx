@@ -2,6 +2,7 @@ import { SkillContent } from '../../profile/SkillContent'
 
 import { SkillProps } from '../../../props/props'
 import { Heading } from '../atoms/Heading'
+const css = require('../../../styles/style/portfolio.scss')
 
 const initialProps: SkillProps[] = [
     {
@@ -14,9 +15,11 @@ export const Skill = ({skill = initialProps}) => {
     return (
         <div>
             <Heading text="Skill" />
-            {
-                skill.map(i => <SkillContent {...i} />)
-            }
+            <div className={css.component + ' ' + css.skill}>
+                {
+                    skill.map(i => <SkillContent {...i} />)
+                }
+            </div>
         </div>
     )
 }

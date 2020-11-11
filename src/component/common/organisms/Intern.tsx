@@ -2,6 +2,7 @@ import { InternProps } from '../../../props/props'
 import { InternContent } from '../../profile/InternContent'
 
 import { Heading } from '../atoms/Heading'
+const css = require('../../../styles/style/portfolio.scss')
 
 const initialProps: InternProps[] = [
     {
@@ -14,7 +15,7 @@ const initialProps: InternProps[] = [
 
 export const Intern = ({intern = initialProps}) => {
     return (
-        <div>
+        <div className={css.component}>
             <Heading text="Intern" />
             {
                 intern.map(i => <InternContent {...i} />)
