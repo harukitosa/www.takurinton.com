@@ -2,6 +2,7 @@ import marked from 'marked';
 const { markdownStyle } = require('../../../styles/ui/dairyreport')
 import { Heading } from '../../../component/atoms/Heading'
 import { DairyreportContent } from '../../../props/props' 
+import { HtmlHead } from '../../../component/parts/Head'
 const css = require('../../../styles/style/markdown.scss')
 
 const Post = (props: DairyreportContent) => {
@@ -10,6 +11,13 @@ const Post = (props: DairyreportContent) => {
   const pubDate = props.post.pub_date.substring(0, 10)
   return (
     <div>
+      <HtmlHead 
+        title={`たくりんとん | ${pubDate}の日報`}
+        description={`${pubDate}の日報`}
+        image={'https://blog.takurinton.com/me.jpg'}
+        url={'https://takurinton.com'}
+      />
+      
       <div style={
         { 
           textAlign: 'center', 

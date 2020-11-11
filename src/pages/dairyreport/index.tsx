@@ -1,8 +1,7 @@
 import { Pagination } from '../../component/parts/Pagination'
 import { DairyreportContent } from '../../component/parts/Dairtreport'
-
 import { DairyreportProps } from '../../props/props'
-
+import { HtmlHead } from '../../component/parts/Head'
 // import dairyreport from '../../mock/dairyreport.json'
 import { Heading } from '../../component/atoms/Heading'
 
@@ -13,7 +12,14 @@ const Main = (props: DairyreportProps) => {
     const next = props.next 
     const prev = props.prev
     return (
-        <div className={css.main}>
+        <div>
+            <HtmlHead 
+                title={'たくりんとん | 日報'}
+                description={'たくりんとんのポートフォリオです'}
+                image={'https://blog.takurinton.com/me.jpg'}
+                url={'https://takurinton.com'}
+            />
+            <div className={css.main}>
             <Heading text="Dairy report" />
             <div className={css.home} >
                 <div className={css.items}>
@@ -24,6 +30,8 @@ const Main = (props: DairyreportProps) => {
                 <Pagination next={String(next)} prev={String(prev)} />
             </div>
         </div>
+        </div>
+
     )
 }
 

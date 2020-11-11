@@ -1,12 +1,14 @@
 import { Header } from '../parts/Header'
-import Head from 'next/head';
+import { HtmlHead } from '../parts/Head'
 
 export const Layout = (props) => (
     <>
-        <Head>
-            <title>たくりんとん</title>
-            <link rel="shortcut icon" href="https://blog.takurinton.com/me.jpg" />
-        </Head>
+        <HtmlHead 
+            title={'たくりんとん'}
+            description={'たくりんとんのポートフォリオです'}
+            image={'https://blog.takurinton.com/me.jpg'}
+            url={'https://takurinton.com'}
+        />
         <style>{`* { margin: 0; padding: 0; }`}</style>
         <Header />
       {props.children}
