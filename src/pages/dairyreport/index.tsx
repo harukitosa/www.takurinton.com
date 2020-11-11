@@ -10,7 +10,6 @@ const css = require('../../styles/style/dairyreport.scss')
 
 
 const Main = (props: DairyreportProps) => {
-    console.log(props)
     const next = props.next 
     const prev = props.prev
     return (
