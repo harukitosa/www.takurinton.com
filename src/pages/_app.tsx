@@ -1,7 +1,7 @@
 import React from "react";
 import Head from 'next/head';
 import { Container } from "next/app";
-import { Layout } from '../component/layout/Layout'
+import { Layout } from '../component/common/layout/Layout'
 
 
 const App = ({ Component, pageProps }) => {

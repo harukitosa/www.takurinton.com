@@ -1,9 +1,9 @@
 import { PortfolioProps } from '../../props/props'
-import { Intern } from '../../component/organisms/Intern'
-import { Skill } from '../../component/organisms/Skill'
-import { Made } from '../../component/organisms/Made'
-import { MineContent } from '../../component/parts/MineContent'
-import { HtmlHead } from '../../component/parts/Head'
+import { Intern } from '../../component/common/organisms/Intern'
+import { Skill } from '../../component/common/organisms/Skill'
+import { Made } from '../../component/common/organisms/Made'
+import { MineContent } from '../../component/profile/MineContent'
+import { HtmlHead } from '../../component/common/Head'
 const css = require('../../styles/style/portfolio.scss')
 import portfolio from '../../../mock/portfolio.json'
 

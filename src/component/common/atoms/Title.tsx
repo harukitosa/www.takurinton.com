@@ -1,4 +1,4 @@
-const css =  require('../../styles/text.scss')
+const css =  require('../../../styles/text.scss')
 
 export const Title = (text: string) => {
     return (

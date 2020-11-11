@@ -1,5 +1,5 @@
 import { Header } from '../parts/Header'
-import { HtmlHead } from '../parts/Head'
+import { HtmlHead } from '../Head'
 
 export const Layout = (props) => (
     <>

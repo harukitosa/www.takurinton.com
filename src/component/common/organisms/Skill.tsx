@@ -1,6 +1,6 @@
-import { SkillContent } from '../parts/SkillContent'
+import { SkillContent } from '../../profile/SkillContent'
 
-import { SkillProps } from '../../props/props'
+import { SkillProps } from '../../../props/props'
 import { Heading } from '../atoms/Heading'
 
 const initialProps: SkillProps[] = [

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const css = require('../../styles/style/header.scss')
+const css = require('../../../styles/style/header.scss')
 
 export const Header = () => {
     return (

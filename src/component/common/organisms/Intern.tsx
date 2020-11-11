@@ -1,5 +1,5 @@
-import { InternProps } from '../../props/props'
-import { InternContent } from '../parts/InternContent'
+import { InternProps } from '../../../props/props'
+import { InternContent } from '../../profile/InternContent'
 
 import { Heading } from '../atoms/Heading'
 

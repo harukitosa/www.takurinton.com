@@ -1,9 +1,9 @@
-import { Pagination } from '../../component/parts/Pagination'
-import { DairyreportContent } from '../../component/parts/Dairtreport'
+import { Pagination } from '../../component/common/parts/Pagination'
+import { DairyreportContent } from '../../component/common/parts/Dairtreport'
 import { DairyreportProps } from '../../props/props'
-import { HtmlHead } from '../../component/parts/Head'
-// import dairyreport from '../../mock/dairyreport.json'
-import { Heading } from '../../component/atoms/Heading'
+import { HtmlHead } from '../../component/common/Head'
+import dairyreport from '../../../mock/dairyreport.json'
+import { Heading } from '../../component/common/atoms/Heading'
 
 const css = require('../../styles/style/dairyreport.scss')
 
@@ -36,9 +36,10 @@ const Main = (props: DairyreportProps) => {
 }
 
 Main.getInitialProps = async (context) => {
-    const query = context.asPath.split('?').length === 1 ? '' : '?' + context.asPath.split('?')[1] // 汚いので要修正
-    const res = await fetch(`https://api.takurinton.com/dairyreport/v1/${query}`)
-    return await res.json()
+    // const query = context.asPath.split('?').length === 1 ? '' : '?' + context.asPath.split('?')[1] // 汚いので要修正
+    // const res = await fetch(`https://api.takurinton.com/dairyreport/v1/${query}`)
+    // return await res.json()
+    return dairyreport
 }
 
 export default Main

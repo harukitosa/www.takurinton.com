@@ -1,5 +1,5 @@
-import { Gopher } from '../component/Character/Gopher'
-import { Welcome } from '../component/parts/Welcome'
+import { Gopher } from '../component/common/Character/Gopher'
+import { Welcome } from '../component/main/Welcome'
 
 const Main = () => {
     return (

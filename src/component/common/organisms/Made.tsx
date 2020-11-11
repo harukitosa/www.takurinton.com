@@ -1,6 +1,6 @@
-import { MadeContent } from '../parts/MadeContent'
+import { MadeContent } from '../../profile/MadeContent'
 
-import { MadeProps } from '../../props/props'
+import { MadeProps } from '../../../props/props'
 import { Heading } from '../atoms/Heading'
 const initialProps: MadeProps[] = [
     {

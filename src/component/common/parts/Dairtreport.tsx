@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import { Dairyreport } from '../../props/props'
+import { Dairyreport } from '../../../props/props'
 
-const css = require('../../styles/style/dairyreport.scss')
+const css = require('../../../styles/style/dairyreport.scss')
 
 export const DairyreportContent = (dairyreport: Dairyreport) => {
     const pubDate = dairyreport.pub_date.substring(0, 10)
