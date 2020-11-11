@@ -1,13 +1,7 @@
 import Head from 'next/head';
+import { HeadProps } from '../../props/props'
 
-interface Props {
-  title: string;
-  description: string;
-  image: string;
-  url: string;
-}
-
-export const HtmlHead = ({ title, description, image, url }: Props) => {
+export const HtmlHead = ({ title, description, image, url }: HeadProps) => {
   return (
     <Head>
       <title>{title}</title>
@@ -23,8 +17,8 @@ export const HtmlHead = ({ title, description, image, url }: Props) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <link rel="canonical" href={url} />
-      <link rel="shortcut icon" href={"https://blog.takurinton.com/me.jpg"} />
-      <link rel="apple-touch-icon" href={"https://blog.takurinton.com/me.jpg"} />
+      <link rel="shortcut icon" href={"me.jpeg"} />
+      <link rel="apple-touch-icon" href={"me.jpeg"} />
     </Head>
   )
 }

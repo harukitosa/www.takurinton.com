@@ -47,3 +47,10 @@ export interface DairyreportContent {
     comment: [], 
     post: DeiryreportPost
 }
+
+export interface HeadProps {
+    title: string;
+    description: string;
+    image: string;
+    url: string;
+}

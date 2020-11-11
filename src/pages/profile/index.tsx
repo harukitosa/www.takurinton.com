@@ -5,7 +5,7 @@ import { Made } from '../../component/organisms/Made'
 import { MineContent } from '../../component/parts/MineContent'
 import { HtmlHead } from '../../component/parts/Head'
 const css = require('../../styles/style/portfolio.scss')
-// import portfolio from '../../mock/portfolio.json'
+import portfolio from '../../../mock/portfolio.json'
 
 const Profile = (props: PortfolioProps) => {
     const intern = props.intern 
@@ -33,9 +33,9 @@ const Profile = (props: PortfolioProps) => {
   }
 
 Profile.getInitialProps = async () => {
-    const res = await fetch("https://api.takurinton.com/portfolio/v1/")
-    return await res.json()
-    // return portfolio
+    // const res = await fetch("https://api.takurinton.com/portfolio/v1/")
+    // return await res.json()
+    return portfolio
 }
 
 export default Profile

@@ -6,7 +6,7 @@ export const MineContent = (mine: MineProps) => {
     return (
         <div className={css.selfIntro}>
             <Heading text="Who?" />
-            <img src="https://blog.takurinton.com/me.jpg" />
+            <img src="me.jpeg" />
             <p>{mine.content}</p>
         </div>
     )
