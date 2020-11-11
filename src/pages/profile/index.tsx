@@ -23,7 +23,7 @@ const Profile = (props: PortfolioProps) => {
   }
 
 Profile.getInitialProps = async () => {
-    const res = await fetch("http://localhost:8080/portfolio/v1/")
+    const res = await fetch("https://api.takurinton.com/portfolio/v1/")
     return await res.json()
     // return portfolio
 }
