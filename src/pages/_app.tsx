@@ -1,7 +1,9 @@
 import React from "react";
-import Head from 'next/head';
 import { Container } from "next/app";
 import { Layout } from '../component/common/layout/Layout'
+
+// @ts-ignore
+import '../styles/base.scss'
 
 
 const App = ({ Component, pageProps }) => {
