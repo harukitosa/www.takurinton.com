@@ -1,7 +1,6 @@
 import { MineProps } from '../../props/props'
-
 import { Heading } from '../atoms/Heading'
-import css from '../../styles/style/portfolio.scss'
+const css = require('../../styles/style/portfolio.scss')
 
 export const MineContent = (mine: MineProps) => { 
     return (

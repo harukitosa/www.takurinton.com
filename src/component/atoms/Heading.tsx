@@ -1,4 +1,4 @@
-import css from '../../styles/text.scss'
+const css =  require('../../styles/text.scss')
 
 export const Heading = ({ text }) => {
     return (

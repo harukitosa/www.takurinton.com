@@ -1,4 +1,4 @@
-import css from '../../styles/style/home.scss'
+const css = require('../../styles/style/home.scss')
 
 import { Twitter, GitHub, Facebook, Blog } from '../../component/parts/SNS'
 

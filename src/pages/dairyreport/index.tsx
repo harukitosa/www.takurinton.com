@@ -6,7 +6,7 @@ import { DairyreportProps } from '../../props/props'
 // import dairyreport from '../../mock/dairyreport.json'
 import { Heading } from '../../component/atoms/Heading'
 
-import css from '../../styles/style/dairyreport.scss'
+const css = require('../../styles/style/dairyreport.scss')
 
 
 const Main = (props: DairyreportProps) => {

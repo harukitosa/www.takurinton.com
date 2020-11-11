@@ -13,6 +13,7 @@
     "@types/marked": "^1.1.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.5",
+    "aria-query": "^4.2.2",
     "fontsource-roboto": "^3.0.3",
     "highlight.js": "^10.2.1",
     "marked": "^1.2.0",
@@ -26,13 +27,12 @@
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-syntax-highlighter": "^15.2.0",
-    "skyway-js": "^3.0.2"
+    "react-syntax-highlighter": "^15.2.0"
   },
   "scripts": {
     "start": "next start",
     "build": "next build",
-    "dev": "next dev", 
+    "dev": "next dev",
     "deploy": "aws s3 sync build/ s3://takurinton.com --exclude '*.DS_Store' --acl public-read --profile blog"
   },
   "eslintConfig": {

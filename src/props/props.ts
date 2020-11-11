@@ -39,7 +39,7 @@ export interface DairyreportProps {
     results: Dairyreport[]
 }
 
-interface DeiryreportPost {
+export interface DeiryreportPost {
     pub_date: string, 
     contents: string
 }

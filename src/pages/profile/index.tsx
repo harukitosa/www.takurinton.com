@@ -3,7 +3,7 @@ import { Intern } from '../../component/organisms/Intern'
 import { Skill } from '../../component/organisms/Skill'
 import { Made } from '../../component/organisms/Made'
 import { MineContent } from '../../component/parts/MineContent'
-import css from '../../styles/style/portfolio.scss'
+const css = require('../../styles/style/portfolio.scss')
 // import portfolio from '../../mock/portfolio.json'
 
 const Profile = (props: PortfolioProps) => {

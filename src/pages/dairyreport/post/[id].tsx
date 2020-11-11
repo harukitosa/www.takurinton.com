@@ -1,8 +1,8 @@
 import marked from 'marked';
-import { markdownStyle } from '../../../styles/ui/dairyreport'
+const { markdownStyle } = require('../../../styles/ui/dairyreport')
 import { Heading } from '../../../component/atoms/Heading'
 import { DairyreportContent } from '../../../props/props' 
-import css from '../../../styles/style/markdown.scss'
+const css = require('../../../styles/style/markdown.scss')
 
 const Post = (props: DairyreportContent) => {
   const r: marked.Renderer = markdownStyle()
