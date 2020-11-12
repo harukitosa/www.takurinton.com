@@ -195,6 +195,12 @@ export const Gopher = () => {
                 right: 73px;
                 transform: rotate(-45deg);
             }
+
+            @media (max-width: 800px) {
+                #main {
+                    margin-top: 30px;
+                }
+            }
             `}</style>
 
             <section id="main">
