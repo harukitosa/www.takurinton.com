@@ -14,7 +14,7 @@ const Post = (props: DairyreportContent) => {
       <HtmlHead 
         title={`たくりんとん | ${pubDate}の日報`}
         description={`${pubDate}の日報`}
-        image={'https://blog.takurinton.com/me.jpg'}
+        image={'me.jpg'}
         url={'https://takurinton.com'}
       />
       

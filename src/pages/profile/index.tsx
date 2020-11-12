@@ -18,7 +18,7 @@ const Profile = (props: PortfolioProps) => {
             <HtmlHead 
                 title={'たくりんとん | profile'}
                 description={'たくりんとんのポートフォリオです'}
-                image={'https://blog.takurinton.com/me.jpg'}
+                image={'me.jpg'}
                 url={'https://takurinton.com'}
             />
 
