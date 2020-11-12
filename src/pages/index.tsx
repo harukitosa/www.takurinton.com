@@ -1,12 +1,10 @@
-import { Gopher } from '../component/common/Character/Gopher'
-import { Welcome } from '../component/main/Welcome'
+import { isObject } from "util"
+
+import { Home } from '../component/main/Home'
 
 const Main = () => {
     return (
-        <div>
-          <Gopher />
-          <Welcome />
-        </div>
+        <Home />
     )
 }
 

@@ -1,50 +1,16 @@
 import { PortfolioProps } from '../../props/props'
-import { Intern } from '../../component/common/organisms/Intern'
-import { Skill } from '../../component/common/organisms/Skill'
-import { Made } from '../../component/common/organisms/Made'
-import { MineContent } from '../../component/profile/MineContent'
-import { HtmlHead } from '../../component/common/Head'
-const css = require('../../styles/style/portfolio.scss')
-import portfolio from '../../../mock/portfolio.json'
+import { Me } from '../../component/profile/Me'
 
 const Profile = (props: PortfolioProps) => {
-    const intern = props.intern 
-    const skill = props.skill
-    const made = props.made
-    const mine = props.mine 
-
     return (
-        <div>
-            <HtmlHead 
-                title={'たくりんとん | profile'}
-                description={'たくりんとんのポートフォリオです'}
-                image={'me.jpg'}
-                url={'https://takurinton.com'}
-            />
-
-            <div className={css.main}>
-            <MineContent {...mine} />
-            <Intern intern={intern} />
-            <Skill skill={skill} />
-            <Made made={made} />
-        </div>
-        </div>
+        <Me props={props} />
     )
-  }
-
-const https = require('https');
-const httpsAgent = new https.Agent({
-    rejectUnauthorized: false,
-  });
+}
 
 Profile.getInitialProps = async () => {
     const res = await fetch("https://api.takurinton.com/portfolio/v1/")
-    // const res = await fetch(`https://takurinton-1783974075.ap-northeast-1.elb.amazonaws.com/portfolio/v1/`, { 
-        // @ts-ignore    
-        // agent: httpsAgent 
-    // })
     return await res.json()
-    // return portfolio
+    // return portfolio mock
 }
 
 export default Profile

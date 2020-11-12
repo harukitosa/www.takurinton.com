@@ -1,7 +1,7 @@
-import { SkillContent } from '../../profile/SkillContent'
+import { SkillContent } from './SkillContent'
 
 import { SkillProps } from '../../../props/props'
-import { Heading } from '../atoms/Heading'
+import { Heading } from '../../common/atoms/Heading'
 const css = require('../../../styles/style/portfolio.scss')
 
 const initialProps: SkillProps[] = [

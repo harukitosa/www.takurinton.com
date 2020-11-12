@@ -1,5 +1,5 @@
-import { MineProps } from '../../props/props'
-const css = require('../../styles/style/portfolio.scss')
+import { MineProps } from '../../../props/props'
+const css = require('../../../styles/style/portfolio.scss')
 
 export const MineContent = (mine: MineProps) => { 
     return (
