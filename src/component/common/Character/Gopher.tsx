@@ -203,6 +203,39 @@ export const Gopher = () => {
                     margin-top: 30px;
                 }
             }
+            @media (max-width: 350px) {
+                #body {
+                    width: 300px;
+                }
+                #eye-left {
+                    right: 15px;
+                }
+                #eye-right {
+                    left: 15px;
+                }
+            }
+            @media (max-width: 300px) {
+                #body {
+                    width: 270px;
+                }
+                #eye-left {
+                    right: 7px;
+                }
+                #eye-right {
+                    left: 7px;
+                }
+            }
+            @media (max-width: 270px) {
+                #body {
+                    width: 240px;
+                }
+                #eye-left {
+                    right: 1px;
+                }
+                #eye-right {
+                    left: 1px;
+                }
+            }
             `}</style>
 
             <section id="main">
