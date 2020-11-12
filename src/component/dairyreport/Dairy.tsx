@@ -19,17 +19,16 @@ export const Dairy = (props: {props: DairyreportProps}) => {
                 url={'https://takurinton.com'}
             />
             <div className={css.main}>
-            <Heading text="Dairy report" />
-            <div className={css.home} >
-                <div className={css.items}>
-                {
-                    props.props.results.map(p => (<DairyreportContent {...p} />))
-                }
-                </div>   
-                <Pagination next={String(next)} prev={String(prev)} />
-            </div>
+                <Heading text="Dairy report" />
+                <div className={css.home} >
+                    <div className={css.items}>
+                    {
+                        props.props.results.map(p => (<DairyreportContent {...p} />))
+                    }
+                    </div>   
+                    <Pagination what="dairyreport" next={String(next)} prev={String(prev)} />
+                </div>
+            </div>  
         </div>
-        </div>
-
     )
 }
