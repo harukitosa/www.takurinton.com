@@ -7,6 +7,9 @@ export const MineContent = (mine: MineProps) => {
             <img src="me.jpeg" />
             <h3>たくりんとん</h3>
             <p>{mine.content}</p>
+            <p>Web制作のお仕事募集してます。</p>
+            <p>takurinton[at]gmail.com、<br />
+                またはTwitterのDMまでお問い合わせください。</p>
         </div>
     )
 }
