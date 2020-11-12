@@ -50,11 +50,12 @@
 }
 
 .box {
-    margin: 3% auto 3%; 
-    padding: 50px 5% 40px; 
+    margin: 3% auto; 
+    padding: 20px 5% 10px; 
     box-shadow: 4px 4px 8px gray;
     width: 60%;
     text-align: center;
+    line-height: 2;
     background: linear-gradient(90deg, $theme_main 5%, white 5%);
 
     h1 {
@@ -75,5 +76,22 @@
         color: $theme_text; 
         font-weight: $thick;
         text-decoration: none;
+    }
+
+    p {
+        font-size: $p; 
+        font-weight: $thick;
+        color: $theme_text;
+    }
+}
+
+.detail { 
+    text-align: center; 
+    margin: 50px; 
+
+    p {
+        font-size: $h5;
+        color: $theme_text;
+        font-weight: $thick;
     }
 }

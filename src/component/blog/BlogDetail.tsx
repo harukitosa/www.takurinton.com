@@ -4,6 +4,7 @@ import { Heading } from '../../component/common/atoms/Heading'
 import { PostProps } from '../../props/props' 
 import { HtmlHead } from '../../component/common/Head'
 const css = require('../../styles/markdown/markdown.scss')
+const style = require('../../styles/style/blog.scss')
 
 export const BlogDetail = (props: {props: PostProps}) => {
   const r: marked.Renderer = markdownStyle()
@@ -18,15 +19,11 @@ export const BlogDetail = (props: {props: PostProps}) => {
         url={'https://takurinton.com'}
       />
       
-      <div style={
-        { 
-          textAlign: 'center', 
-          marginTop: '50px', 
-        }}>
+      <div className={style.detail}>
         <Heading text={props.props.title} />
+        <p>{pubDate}</p>
       </div>
        <div className={css.main} dangerouslySetInnerHTML={{ __html: md }} />
     </div>
   )
 }
-
