@@ -37,7 +37,7 @@ const httpsAgent = new https.Agent({
 });
 Post.getInitialProps = async (context) => {
   const { id } = context.query
-  const res = await fetch(`https://takurinton.com/dairyreport/v1/${id}`)
+  const res = await fetch(`https://api.takurinton.com/dairyreport/v1/${id}`)
   // const res = await fetch(`https://takurinton-1783974075.ap-northeast-1.elb.amazonaws.com/dairyreport/v1/${id}`, { 
   //   // @ts-ignore
   //   agent: httpsAgent 

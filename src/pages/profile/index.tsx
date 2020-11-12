@@ -38,7 +38,7 @@ const httpsAgent = new https.Agent({
   });
 
 Profile.getInitialProps = async () => {
-    const res = await fetch("https://takurinton.com/portfolio/v1/")
+    const res = await fetch("https://api.takurinton.com/portfolio/v1/")
     // const res = await fetch(`https://takurinton-1783974075.ap-northeast-1.elb.amazonaws.com/portfolio/v1/`, { 
         // @ts-ignore    
         // agent: httpsAgent 
