@@ -32,10 +32,19 @@ const Profile = (props: PortfolioProps) => {
     )
   }
 
+const https = require('https');
+const httpsAgent = new https.Agent({
+    rejectUnauthorized: false,
+  });
+
 Profile.getInitialProps = async () => {
     // const res = await fetch("https://api.takurinton.com/portfolio/v1/")
-    // return await res.json()
-    return portfolio
+    const res = await fetch(`https://takurinton-1783974075.ap-northeast-1.elb.amazonaws.com/portfolio/v1/`, { 
+        // @ts-ignore    
+        agent: httpsAgent 
+    })
+    return await res.json()
+    // return portfolio
 }
 
 export default Profile

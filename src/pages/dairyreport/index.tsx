@@ -35,11 +35,20 @@ const Main = (props: DairyreportProps) => {
     )
 }
 
+const https = require('https');
+const httpsAgent = new https.Agent({
+    rejectUnauthorized: false,
+  });
+
 Main.getInitialProps = async (context) => {
-    // const query = context.asPath.split('?').length === 1 ? '' : '?' + context.asPath.split('?')[1] // 汚いので要修正
+    const query = context.asPath.split('?').length === 1 ? '' : '?' + context.asPath.split('?')[1] // 汚いので要修正
     // const res = await fetch(`https://api.takurinton.com/dairyreport/v1/${query}`)
-    // return await res.json()
-    return dairyreport
+    const res = await fetch(`https://takurinton-1783974075.ap-northeast-1.elb.amazonaws.com/dairyreport/v1/${query}`, { 
+        // @ts-ignore
+        agent: httpsAgent 
+    })
+    return await res.json()
+    // return dairyreport
 }
 
 export default Main

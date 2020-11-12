@@ -17,6 +17,12 @@
         font-size: $h4;
         color: $theme_subtext;
     }
+
+    @media (max-width: 500px) {
+        h1 {
+            width: 80%;
+        }
+    }
 }
 
 .snsicon {

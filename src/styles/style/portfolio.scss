@@ -40,6 +40,14 @@
         border-radius: 10px;
         background: linear-gradient(90deg, $pink_kawaii 5%, white 5%);
     }
+
+    @media (max-width: 800px) {
+        width: 80%;
+
+        .intern {
+            width: 100%;
+        }
+    }
 }
 
 .skill, 
@@ -79,5 +87,9 @@
             line-height: 100px;
         }
     };
+
+
+    @media (max-width: 800px) {
+    }
 }
 
