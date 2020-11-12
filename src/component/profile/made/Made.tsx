@@ -1,7 +1,7 @@
-import { MadeContent } from '../../profile/MadeContent'
+import { MadeContent } from './MadeContent'
 
 import { MadeProps } from '../../../props/props'
-import { Heading } from '../atoms/Heading'
+import { Heading } from '../../common/atoms/Heading'
 const css = require('../../../styles/style/portfolio.scss')
 const initialProps: MadeProps[] = [
     {

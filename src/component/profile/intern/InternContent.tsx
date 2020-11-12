@@ -1,6 +1,5 @@
-import { InternProps } from '../../props/props'
-import { Profile } from './Content'
-const css = require('../../styles/style/portfolio.scss')
+import { InternProps } from '../../../props/props'
+const css = require('../../../styles/style/portfolio.scss')
 
 export const InternContent = (content: InternProps) => { 
     return (

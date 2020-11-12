@@ -58,10 +58,13 @@ export const Gopher = () => {
                 position: absolute;
                 margin: 0 auto 0;
                 background: black;
-                height: 70px;
+                /* height: 70px;
                 width: 110px;
-                clip-path: ellipse(25% 23% at 50% 41%);
-                top: 130px;
+                clip-path: ellipse(25% 23% at 50% 41%); */
+                height: 40px;
+                width: 60px;
+                border-radius: 50%;
+                top: 140px;
                 right: 0;
                 left: 0;
                 z-index: 2;
@@ -70,16 +73,15 @@ export const Gopher = () => {
                 position: absolute;
                 margin: 0 auto 0;
                 background: rgb(255, 215, 173);
-                height: 100px;
+                height: 60px;
                 width: 100px;
-                top: 135px;
+                top: 155px;
                 right: 0;
                 left: 0;
                 border-radius: 50%;
-                clip-path: ellipse(50% 27% at 50% 50%);
                 z-index: 1;
-                
             }
+            
             #tooth-box {
                 position: absolute;
                 margin: 0 auto 0;
@@ -194,6 +196,45 @@ export const Gopher = () => {
                 bottom: 23px;
                 right: 73px;
                 transform: rotate(-45deg);
+            }
+
+            @media (max-width: 800px) {
+                #main {
+                    margin-top: 30px;
+                }
+            }
+            @media (max-width: 350px) {
+                #body {
+                    width: 300px;
+                }
+                #eye-left {
+                    right: 15px;
+                }
+                #eye-right {
+                    left: 15px;
+                }
+            }
+            @media (max-width: 300px) {
+                #body {
+                    width: 270px;
+                }
+                #eye-left {
+                    right: 7px;
+                }
+                #eye-right {
+                    left: 7px;
+                }
+            }
+            @media (max-width: 270px) {
+                #body {
+                    width: 240px;
+                }
+                #eye-left {
+                    right: 1px;
+                }
+                #eye-right {
+                    left: 1px;
+                }
             }
             `}</style>
 

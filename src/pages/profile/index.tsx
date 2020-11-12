@@ -1,41 +1,16 @@
 import { PortfolioProps } from '../../props/props'
-import { Intern } from '../../component/common/organisms/Intern'
-import { Skill } from '../../component/common/organisms/Skill'
-import { Made } from '../../component/common/organisms/Made'
-import { MineContent } from '../../component/profile/MineContent'
-import { HtmlHead } from '../../component/common/Head'
-const css = require('../../styles/style/portfolio.scss')
-import portfolio from '../../../mock/portfolio.json'
+import { Me } from '../../component/profile/Me'
 
 const Profile = (props: PortfolioProps) => {
-    const intern = props.intern 
-    const skill = props.skill
-    const made = props.made
-    const mine = props.mine 
-
     return (
-        <div>
-            <HtmlHead 
-                title={'たくりんとん | profile'}
-                description={'たくりんとんのポートフォリオです'}
-                image={'https://blog.takurinton.com/me.jpg'}
-                url={'https://takurinton.com'}
-            />
-
-            <div className={css.main}>
-            <MineContent {...mine} />
-            <Intern intern={intern} />
-            <Skill skill={skill} />
-            <Made made={made} />
-        </div>
-        </div>
+        <Me props={props} />
     )
-  }
+}
 
 Profile.getInitialProps = async () => {
-    // const res = await fetch("https://api.takurinton.com/portfolio/v1/")
-    // return await res.json()
-    return portfolio
+    const res = await fetch("https://api.takurinton.com/portfolio/v1/")
+    return await res.json()
+    // return portfolio mock
 }
 
 export default Profile

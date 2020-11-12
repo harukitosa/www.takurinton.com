@@ -1,7 +1,7 @@
 import { InternProps } from '../../../props/props'
-import { InternContent } from '../../profile/InternContent'
+import { InternContent } from './InternContent'
 
-import { Heading } from '../atoms/Heading'
+import { Heading } from '../../common/atoms/Heading'
 const css = require('../../../styles/style/portfolio.scss')
 
 const initialProps: InternProps[] = [
