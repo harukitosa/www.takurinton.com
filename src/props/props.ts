@@ -54,3 +54,71 @@ export interface HeadProps {
     image: string;
     url: string;
 }
+
+export type GetPost = {
+    next: string, 
+    previous: string, 
+    total: number, 
+    category: any,
+    current: number, 
+    results: PostProps[], 
+    page_size: string, 
+    first: string, 
+    last: string
+}
+
+// post
+export type PostProps = {
+    id: number,
+    title: string, 
+    category: string,
+    contents: string, 
+    contents_image_url: string,
+    pub_date: string,
+    comment: CommentProps[]
+}
+export const initialPost:PostProps = {
+    id: 0,
+    title: '', 
+    category: '', 
+    contents: '',
+    contents_image_url: '', 
+    pub_date: '', 
+    comment: []
+}
+
+// category
+export type CategoryProps = {
+    category: string[]
+}
+export const initialCategory:CategoryProps = {
+    category: []
+}
+
+
+// comment
+export interface CommentProps {
+    name: string, 
+    contents: string, 
+    pub_date: string
+}
+export const initialCommentState:CommentProps = {
+    name: '', 
+    contents: '', 
+    pub_date: ''
+}
+export const initialComment:CommentProps[] = [
+    {
+        name: '', 
+        contents: '', 
+        pub_date: ''
+    }
+]
+
+// search
+export type TypeSearch = {
+    content: string, 
+}
+export const initialSearch = {
+    content: '', 
+}
