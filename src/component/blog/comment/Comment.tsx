@@ -1,8 +1,8 @@
-import { Submit } from '../../common/atoms/Submit'
 import { CommentContent} from './CommentContent'
 import { CommentProps } from '../../../props/props'
 import { useComment } from '../../../hooks/useComment'
 import { CommentForm } from './CommentForm'
+const css = require('../../../styles/style/input.scss')
 
 export const Comment = (props: { postId: number, comment: CommentProps[] }) => {
     const {
@@ -22,7 +22,7 @@ export const Comment = (props: { postId: number, comment: CommentProps[] }) => {
     }
 
     return (
-        <div>
+        <div className={css.form}>
             <CommentForm state={state} onChange={onChange} onSubmit={onSubmit} />
             {
                 props.comment.map(c => ( <CommentContent {...c} /> ))

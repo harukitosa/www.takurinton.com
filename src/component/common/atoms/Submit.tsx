@@ -1,9 +1,7 @@
-const css = require('../../../styles/style/button.scss')
+const css = require('../../../styles/style/input.scss')
 
 export const Submit = () => {
     return (
-        <button type="submit" >
-            送信
-        </button>
+        <button type="submit" className={css.submit}>送信</button>
     )
 }

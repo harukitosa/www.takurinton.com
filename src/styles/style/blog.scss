@@ -95,3 +95,21 @@
         font-weight: $thick;
     }
 }
+
+.comment {
+    margin: 20px 0;
+    padding: 0 0 5px;
+    border-bottom: 2px solid rgb(221, 221, 221);
+
+    p, span {
+        color: $theme_text;
+    }
+    p {
+        padding-bottom: 10px;
+        font-size: $h4;
+        font-weight: $thick;
+    }
+    span {
+        font-size: $p;
+    }
+}
