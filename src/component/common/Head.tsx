@@ -19,6 +19,9 @@ export const HtmlHead = ({ title, description, image, url }: HeadProps) => {
       <link rel="canonical" href={url} />
       <link rel="shortcut icon" href={"me.jpeg"} />
       <link rel="apple-touch-icon" href={"me.jpeg"} />
-    </Head>
+      <link rel="stylesheet" />
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css" />   
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/solarized-dark.min.js" /> 
+      </Head>
   )
 }
