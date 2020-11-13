@@ -11,7 +11,8 @@ const Post = (props: PostProps) => {
 
 Post.getInitialProps = async (context) => {
     const { id } = context.query
-    const res = await fetch(`https://api.takurinton.com/blog/v1/post/${id}`)
+    // const res = await fetch(`https://api.takurinton.com/blog/v1/post/${id}`)
+    const res = await fetch(`http://localhost:8080/blog/v1/post/${id}`)
     return await res.json()
 }
 

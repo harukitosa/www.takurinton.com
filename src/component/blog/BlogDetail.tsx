@@ -3,7 +3,7 @@ const { markdownStyle } = require('../../styles/markdown/dairyreport')
 import { Heading } from '../../component/common/atoms/Heading'
 import { PostProps } from '../../props/props' 
 import { HtmlHead } from '../../component/common/Head'
-import { CommentForm } from '../blog/CommentForm'
+import { Comment } from './comment/Comment'
 import { syntaxHighlight } from '../../styles/markdown/syntaxHighlight'
 const css = require('../../styles/markdown/markdown.scss')
 const style = require('../../styles/style/blog.scss')
@@ -29,7 +29,7 @@ export const BlogDetail = (props: {props: PostProps}) => {
       </div>
        <div className={css.main} dangerouslySetInnerHTML={{ __html: md }} />
 
-       <CommentForm />
+       <Comment postId={props.props.id} comment={props.props.comment} />
     </div>
   )
 }

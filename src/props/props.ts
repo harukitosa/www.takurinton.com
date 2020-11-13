@@ -75,6 +75,7 @@ export type PostProps = {
     contents: string, 
     contents_image_url: string,
     pub_date: string,
+    comment: CommentProps[]
 }
 export const initialPost:PostProps = {
     id: 0,
@@ -82,7 +83,8 @@ export const initialPost:PostProps = {
     category: '', 
     contents: '',
     contents_image_url: '', 
-    pub_date: ''
+    pub_date: '', 
+    comment: []
 }
 
 // category
