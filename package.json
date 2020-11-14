@@ -16,6 +16,7 @@
     "aria-query": "^4.2.2",
     "fontsource-roboto": "^3.0.3",
     "highlight.js": "^10.2.1",
+    "kuromoji": "^0.1.2",
     "marked": "^1.2.0",
     "next": "^10.0.1",
     "now": "^20.1.2",
