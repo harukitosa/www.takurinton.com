@@ -4,7 +4,7 @@ import React, {
     useState,
   } from 'react'
 
-const k = require('kuromoji')
+import { morphemeDissected } from '../../function/speech/morphemeDissected'
 
 const Search = () => {
     const recognition = useRef<Recognition>();
@@ -22,15 +22,7 @@ const Search = () => {
         r.onFinal = (c) => {
         r.toggle()
         state.content = c
-
-        k.builder({ dicPath: "/dict" }).build((err, tokenizer) => {
-            if(err){
-              console.log(err)
-            } else {
-              const tokens = tokenizer.tokenize(state.content)
-              console.log(tokens)
-            }
-          })
+        morphemeDissected(state.content)
     }}
 
     const onStop = () => {
