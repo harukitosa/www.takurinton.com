@@ -20,7 +20,7 @@ const App = ({ Component, pageProps }) => {
             <Layout>
               <Component {...pageProps} />
             </Layout>
-        </Container>
+        </Container> 
       </>
       );
 }

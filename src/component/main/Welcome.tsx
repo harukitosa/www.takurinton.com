@@ -1,6 +1,6 @@
 const css = require('../../styles/style/home.scss')
 
-import { Twitter, GitHub, Facebook, Blog } from './SNS'
+import { Twitter, GitHub, This } from './SNS'
 
 export const Welcome = () => {
     return (
@@ -10,7 +10,8 @@ export const Welcome = () => {
             <Twitter />
             <GitHub />
             {/* <Facebook /> */}
-            <Blog />
+            {/* <Blog /> */}
+            <This />
         </div>
         
     )

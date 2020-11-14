@@ -11,7 +11,7 @@ export const BlogContent = (post: PostProps) => {
             <Link href="/post/[id]" as={`/post/${post.id}`}>
                 <div className={css.content}>
                     {/* あとでbr消しておいてね */}
-                    <img src={image} /> <br /> 
+                    <img src={image} alt={post.title} /> <br /> 
                     <h1>{post.title}</h1>
                 </div>
             </Link>
