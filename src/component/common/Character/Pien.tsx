@@ -3,14 +3,15 @@ export const Pien = () => {
         <div>
             <style>{`
             .pien-face-top{
-                margin: auto;
+                margin: 0 auto;
+                right: 0; 
+                left: 0;
                 top: 100px;
                 width: 300px;
                 height: 300px;
                 background: rgb(255, 234, 0);
                 border-radius: 50%;
-                position: absolute;
-                right: 150px;
+                position: relative;
                 border-radius: 50%;
             }
             .pien-eye{

@@ -56,8 +56,8 @@ export interface HeadProps {
 }
 
 export type GetPost = {
-    next: string, 
-    previous: string, 
+    next: string | null, 
+    previous: string | null, 
     total: number, 
     category: any,
     current: number, 
