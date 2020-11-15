@@ -20,6 +20,7 @@ export const Blog = (props: {props: GetPost}) => {
                         props.props.results.map(p => ( <BlogContent {...p} />) )
                     }
                     </div>   
+                    {/* @ts-ignore */}
                     <Pagination what="" next={String(next)} prev={String(prev)} category={props.props.category} />
                 </div>
             </div>
