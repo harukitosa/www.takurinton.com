@@ -8,9 +8,9 @@ export const Header = () => {
             <p className={css.title}>
                 <Link href="/"><a>takurinton.com</a></Link>
             </p>
-            <p className={css.page}>
+            {/* <p className={css.page}>
                 <Link href="/contact"><a>contact</a></Link>
-            </p>
+            </p> */}
             <p className={css.page}>
                 <Link href="/dairyreport"><a>dairyreport</a></Link>
             </p>
