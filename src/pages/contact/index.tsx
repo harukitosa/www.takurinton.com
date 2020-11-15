@@ -1,25 +1,28 @@
 import { useEffect } from 'react'
-import { useContact } from '../../hooks/useContact'
-import { ContactForm } from '../../component/contact/ContactForm'
+// import { useContact } from '../../hooks/useContact'
+// import { ContactForm } from '../../component/contact/ContactForm'
 
 const Contact = () => {
-    const {
-        handleChange, 
-        handleSubmit, 
-        state
-    } = useContact()
+    // const {
+    //     handleChange, 
+    //     handleSubmit, 
+    //     state
+    // } = useContact()
 
-    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        handleChange(e)
-    }
+    // const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //     handleChange(e)
+    // }
 
-    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
-        handleSubmit(state)
-    }
+    // const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault()
+    //     handleSubmit(state)
+    // }
 
     return (
-        <ContactForm state={state} onChange={onChange} onSubmit={onSubmit} />
+        <>
+        <h1>Contact page</h1>
+            {/* <ContactForm state={state} onChange={onChange} onSubmit={onSubmit} /> */}
+        </>
     )
 }
 

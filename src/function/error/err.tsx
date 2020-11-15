@@ -1,4 +1,4 @@
-import { Pien } from '../component/common/Character/Pien'
+import { Pien } from '../../component/common/Character/Pien'
 export const Error = (res: {status: number}) => {
     const message = res.status === 404 ? 'Page Not Found' : 'Internal Server Error'
     return (

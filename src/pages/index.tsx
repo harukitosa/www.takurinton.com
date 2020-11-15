@@ -1,13 +1,8 @@
 import { Home } from '../component/main/Home'
 import { Blog } from '../component/blog/Blog'
-import { Error } from './_error'
 import { GetPost } from '../props/props'
 
 const Main = (res: {res: GetPost, status: number}) => {
-    if (res.status >= 400) {
-        return <Error status={res.status} />
-    }
-
     return (
         <div>
             <Home />
@@ -16,7 +11,7 @@ const Main = (res: {res: GetPost, status: number}) => {
     )
 }
 
-Main.getInitialProps = async (context: any) => {
+Main.getInitialProps = async (context:any) => {
     const query = context.asPath.split('?').length === 1 ? '' : '?' + context.asPath.split('?')[1] // 汚いので要修正
     const res = await fetch(`https://api.takurinton.com/blog/v1/${query}`)
     // const res = await fetch(`http://localhost:8080/blog/v1/${query}`)
