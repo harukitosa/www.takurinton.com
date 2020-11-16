@@ -15,7 +15,7 @@ export const Dairy = (props: {props: DairyreportProps}) => {
             <HtmlHead 
                 title={'たくりんとん | 日報'}
                 description={'たくりんとんのポートフォリオです'}
-                image={'me.jpg'}
+                image={'https://www.takurinton.com/me.jpeg'}
                 url={'https://takurinton.com'}
             />
             <div className={css.main}>
