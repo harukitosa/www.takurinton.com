@@ -122,3 +122,9 @@ export type TypeSearch = {
 export const initialSearch = {
     content: '', 
 }
+
+export interface Mine101ContentProps {
+    id: number, 
+    title: string, 
+    contents: string 
+}
