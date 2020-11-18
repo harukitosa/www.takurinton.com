@@ -116,5 +116,11 @@
         - ページネーションの部分のコンポーネント
         - 次ページがなかったら表示しないようにしてる
         - ここ可愛くて好き
-        
 
+## 使用方法
+```bash
+git clone https://github.com/takurinton/portfolio
+cd portfolio
+npm i
+npm run dev
+```
