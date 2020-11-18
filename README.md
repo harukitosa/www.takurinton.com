@@ -43,3 +43,35 @@
 - props/
   - props.ts
     - 共通のinterfaceを全て入れてここから適宜呼び出している
+- styles/
+  - スタイルを入れている
+  - theme.scssではカラーテーマやフォントサイズなどの共通の設定をしている
+  - 青とピンクをベースカラーとして選定
+  - あとは基本的に白と黒
+- hooks
+  - useComment.ts
+    - コメント投稿のpost requestを投げるためのフック
+    - 状態管理がメイン
+  - useContact.ts
+    - お問い合わせ投稿のpost requestを投げるためのフック
+    - 状態管理がメイン
+- function
+  - api
+    - comment
+      - post.ts
+        - コメントを投げる
+    - contact
+      - post.ts
+        - お問い合わせを投稿する
+  - speech
+    - morphemeDissected.ts
+      - kuromoji.jsにて形態素解析をする実装
+      - recognition.tsで拾った音声を元に行う
+      - ブログの音声検索機能を行うため
+      - バックエンドで実装すると処理が重かったりする
+      - Frontend Studyでフロントエンドの守備範囲が今後増えると聞いたので、それを実際に体験してみようということで少しアウトプットを兼ねて実装してみた
+      - まだまだ準備段階なのでもっと洗練していきたい
+      - 研究ではNLPをやる予定なのでその練習？
+    - recognition.ts
+      - ブラウザから音声を拾って文字起こしをするための処理
+      - これChromeとedgeでしか使えないけど面白い機能
