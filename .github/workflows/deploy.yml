@@ -1,0 +1,24 @@
+name: DeployPortfolio
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: build and deploy
+    runs-on: ubuntu-latest
+    steps:
+        
+      - uses: actions/checkout@v2
+      - name: setting conf
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 12.x
+      - run: npm run build
+        env:
+          CI: ""
+        
+      - name: deploy
+        run: npm run deploy
