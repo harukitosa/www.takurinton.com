@@ -56,8 +56,8 @@ export interface HeadProps {
 }
 
 export type GetPost = {
-    next: string, 
-    previous: string, 
+    next: string | null, 
+    previous: string | null, 
     total: number, 
     category: any,
     current: number, 
@@ -121,4 +121,10 @@ export type TypeSearch = {
 }
 export const initialSearch = {
     content: '', 
+}
+
+export interface Mine101ContentProps {
+    id: number, 
+    title: string, 
+    contents: string 
 }

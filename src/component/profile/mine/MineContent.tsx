@@ -4,12 +4,13 @@ const css = require('../../../styles/style/portfolio.scss')
 export const MineContent = (mine: MineProps) => { 
     return (
         <div className={css.component}>
-            <img src="me.jpeg" alt="me"/>
+            <img src="https://www.takurinton.com/me.jpeg" alt="me"/>
             <h3>たくりんとん</h3>
             <p>{mine.content}</p>
             <p>Web制作のお仕事募集してます。<br />
+                takurinton[at]takurinton.com、<br />
                 takurinton[at]gmail.com、<br />
-                またはTwitterのDMまでお問い合わせください。
+                TwitterのDMのいずれかにお問い合わせください。
             </p>
         </div>
     )

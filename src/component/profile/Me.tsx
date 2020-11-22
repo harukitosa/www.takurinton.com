@@ -17,7 +17,7 @@ export const Me = (props: {props: PortfolioProps}) => {
             <HtmlHead 
                 title={'たくりんとん | profile'}
                 description={'たくりんとんのポートフォリオです'}
-                image={'me.jpg'}
+                image={'https://www.takurinton.com/me.jpeg'}
                 url={'https://takurinton.com'}
             />
 
