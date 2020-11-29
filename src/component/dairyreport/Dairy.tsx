@@ -19,7 +19,7 @@ export const Dairy = (props: {props: DairyreportProps}) => {
                 url={'https://takurinton.com'}
             />
             <div className={css.main}>
-                <Heading text="Dairy report" />
+                <Heading text="Daily report" />
                 <div className={css.home} >
                     <div className={css.items}>
                     {
