@@ -1,21 +1,23 @@
 var path = require('path');
 var webpack = require('webpack');
+const marked = require('marked');
+const markdownRenderer = new marked.Renderer();
 var sassLintPlugin = require('sasslint-webpack-plugin');
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/dev-server',
     './src/index.tsx',
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: 'http://localhost:8080/',
+    publicPath: 'http://localhost:3000/',
     filename: 'dist/bundle.js',
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js'],
+    extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.md', 'txt'],
   },
   module: {
     rules: [{
@@ -41,6 +43,23 @@ module.exports = {
     }, {
       test: /\.css$/,
       loaders: ['style', 'css']
+    }, {
+      //  use: ['html-loader', 'markdown-loader'] 
+      test: /\.md$/,
+      // loaders: ['html-lorder', 'markdown-loader', 'raw-loader']
+      use: [
+        {
+          loader: 'html-loader', 
+          options: {
+            esModule: true,
+          }
+        }, {
+          loader: 'markdown-loader', 
+          options: {
+            pedantic: true,
+            renderer: markdownRenderer
+          }
+        }]
     }],
   },
   externals: {
