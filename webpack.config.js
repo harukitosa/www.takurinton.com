@@ -44,6 +44,7 @@ module.exports = {
       test: /\.css$/,
       loaders: ['style', 'css']
     }, {
+      // これ無意味
       //  use: ['html-loader', 'markdown-loader'] 
       test: /\.md$/,
       // loaders: ['html-lorder', 'markdown-loader', 'raw-loader']
