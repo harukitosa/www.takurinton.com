@@ -52,7 +52,7 @@ const wiki_ja = `
 - HN: たくりんとん
 - 生年月日: 1999年11月23日
 - 所属: 金沢工業大学工学部情報工学科3年
-- 就職先: 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
+- 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
 
 # 経歴
 - 2015年
@@ -193,7 +193,7 @@ const wiki_ja = `
 - nickname: takurinton
 - birth: November 23, 1999
 - belong: Kanazawa Institute of Technology computer science 3rd
-- will works at: VOYAGE GROUP Inc. from 2022 
+- Worked at hoge from 2022
 
 # career
 - 2015
