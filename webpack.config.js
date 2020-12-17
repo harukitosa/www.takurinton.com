@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 const marked = require('marked');
-const markdownRenderer = new marked.Renderer();
+const renderer = new marked.Renderer();
 var sassLintPlugin = require('sasslint-webpack-plugin');
 
 module.exports = {
@@ -17,7 +17,7 @@ module.exports = {
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.md', 'txt'],
+    extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.md', '.mdx', '.txt'],
   },
   module: {
     rules: [{
@@ -46,32 +46,33 @@ module.exports = {
     }, {
       // これ無意味
       //  use: ['html-loader', 'markdown-loader'] 
-      test: /\.mdx$/,
+      test: /\.md$/,
       // loaders: ['html-lorder', 'markdown-loader', 'raw-loader']
-      // use: [
-      //   {
-      //     loader: 'html-loader', 
-      //     options: {
-      //       esModule: true,
-      //     }
-      //   }, {
-      //     loader: 'markdown-loader', 
-      //     options: {
-      //       pedantic: true,
-      //       renderer: markdownRenderer
-      //     }
-      //   }]
       use: [
         {
-          loader: 'babel-loader'
-        },
-        {
-          loader: '@mdx-js/loader',
+          loader: 'html-loader', 
           options: {
-            remarkPlugins: [images, emoji]
+            esModule: true,
           }
-        }
-      ]
+        }, {
+          loader: 'markdown-loader', 
+          options: {
+            pedantic: true,
+            renderer,
+          }
+        }], 
+      exclude: /node_modules/,
+      // use: [
+      //   {
+      //     loader: 'babel-loader'
+      //   },
+      //   {
+      //     loader: '@mdx-js/loader',
+      //     options: {
+      //       remarkPlugins: [images, emoji]
+      //     }
+      //   }
+      // ]
     }],
   },
   externals: {

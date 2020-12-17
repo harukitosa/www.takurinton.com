@@ -8,21 +8,21 @@ const { markdownStyle } = require('../../styles/markdown/dairyreport')
 
 export const Wiki = () => {
   const r: marked.Renderer = markdownStyle()
-  // const wiki = require('../../../md/wiki.mdx')
+  const wiki = require('../../../md/wiki.md')
   // マークダウンなぜか呼べなくてイライラしちゃった
-  const wiki = ` 
-# 見出し1
-- hoge
-- fuga
-- poyo
-- piyo
-  - nest 
-  - nest/hoge
+//   const wiki = ` 
+// # 見出し1
+// - hoge
+// - fuga
+// - poyo
+// - piyo
+//   - nest 
+//   - nest/hoge
 
-## 見出し2
-~~utikesi~~  
-**strong**
-`
+// ## 見出し2
+// ~~utikesi~~  
+// **strong**
+// `
   const md: string = marked(wiki, {renderer: r})
 
   return (
@@ -45,10 +45,5 @@ export const Wiki = () => {
     </div>
   )
 }
-
-// Wiki.getInitialProps = async () => {
-//     const wiki = await require('../../../md/wiki.md')
-//     return wiki
-// }
 
 export default Wiki

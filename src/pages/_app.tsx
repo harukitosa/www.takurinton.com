@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { Container } from "next/app";
-import { Layout } from '../component/common/layout/Layout'
+// import { Layout } from '../component/common/layout/Layout'
+import { Header } from '../component/common/parts/Header'
 import { Error } from '../function/error/err'
+import { HtmlHead } from '../component/common/Head'
 
 // @ts-ignore
 import '../styles/base.scss'
@@ -20,9 +22,15 @@ const App = ({ Component, pageProps }) => {
     return (
       <>
         <Container>
-            <Layout>
-              {component}
-            </Layout>
+        <HtmlHead 
+            title={'たくりんとん'}
+            description={'たくりんとんのポートフォリオです'}
+            image={'https://www.takurinton.com/me.jpeg'}
+            url={'https://www.takurinton.com'}
+        />
+        <style>{`* { margin: 0; padding: 0; }`}</style>
+        <Header />
+        {component}
         </Container> 
       </>
       );
