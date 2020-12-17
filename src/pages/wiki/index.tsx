@@ -5,14 +5,12 @@ import { HtmlHead } from '../../component/common/Head'
 const css = require('../../styles/markdown/wiki.scss')
 const { markdownStyle } = require('../../styles/markdown/dairyreport')
 
-
-
 export const Wiki = () => {
   const r: marked.Renderer = markdownStyle()
   // const requireMarkdown = require("require-markdown")
-  // const _wiki = require('../../../md/wiki.md')
+  const _wiki: string = require('../../../md/wiki.md');
+  console.log(_wiki)
   // const _wiki = requireMarkdown("../../../md/wiki.md"); 
-  // console.log(_wiki)
   // マークダウンなぜか呼べなくてイライラしちゃった
   const wiki = ` 
 # 見出し1

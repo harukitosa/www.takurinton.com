@@ -23,11 +23,14 @@ const nextConfig = {
   webpack: (config) => {
     config.module.rules.push({
       test: /\.md$/,
-      use: 'raw-loader'
-      // loader: 'frontmatter-markdown-loader',
-      // options: { 
-      //   mode: ['react-component'] 
-      // }, 
+        use: [
+          {
+            loader: 'html-loader'
+          },
+          {
+            loader: 'markdown-loader'
+          }
+        ]
     })
     return config
   }
@@ -57,8 +60,24 @@ const nextConfig = {
 
 
 module.exports = withPlugins([
-  [sassConfig], 
-  // nextConfig  // これあったらMODULE_NOT_FOUND、なかったら動くけどmarkdownが読み込まれない
+  [withSass, { cssModules: true }],
+  // これでいけるはずなんだけどな
+  // {
+  //   webpack: config => {
+  //     config.module.rules.push({
+  //       test: /\.md$/,
+  //         use: [
+  //           {
+  //             loader: 'html-loader'
+  //           },
+  //           {
+  //             loader: 'markdown-loader'
+  //           }
+  //         ]
+  //     })
+  //     return config
+  //   }
+  // }
 ])
 
 // module.exports = [
