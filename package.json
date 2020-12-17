@@ -43,6 +43,7 @@
     "react-scripts": "3.4.3",
     "react-syntax-highlighter": "^15.2.0",
     "require-markdown": "^1.2.0",
+    "sass": "^1.30.0",
     "url-loader": "^4.1.1"
   },
   "scripts": {
