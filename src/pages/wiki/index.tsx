@@ -109,11 +109,28 @@ const wiki_ja = `
 
 # スキル(ツール、フレームワーク、ミドルウェア)
 - Django
+  - 簡単なサイト作成
+  - APIサーバの開発
+  - ORMを使いこなします
 - gin 
+  - シンプルなルーティング（エンドポイント）の作成
+  - APIサーバの作成
 - AWS
+  - route53
+  - S3
+  - EC2
+  - RDS
+  - ELB
+  - ALB
+  - (Lambda)
 - heroku
+  - デプロイ
+  - ポスグレの拡張の使用
 - SQL
+  - 簡単なレコードの作成
+  - N+1問題とは切っても切れない（勉強中）
 - 自作インタプリタ
+  - Goで作るインタプリタを読んで作ってみた、楽しかったので拡張中
 
 # わからんからこれからやりたい
 - TypeScript
@@ -131,8 +148,6 @@ const wiki_ja = `
 - 自動化(開発者目線)
 - フロントエンドのパフォーマンスチューニング
 - 日本語(これが一番難しい!!!)
-
-
 
 # インターンシップ 
 - **株式会社シスネクト**
@@ -235,11 +250,28 @@ const wiki_ja = `
 
 # skill(tools, framework, middleware)
 - Django
+  - dev non SPA site
+  - dev API server
+  - use ORM
 - gin 
+  - simple routing
+  - dev API server
 - AWS
+  - route53
+  - S3
+  - EC2
+  - RDS
+  - ELB
+  - ALB
+  - (Lambda)
 - heroku
+  - deploy
+  - Postgres
 - SQL
+  - simple record
+  - N+1( ；∀；)
 - handmade language
+  - interpreter made of golang
 
 # wanna do cuz I don't understand
 - TypeScript
