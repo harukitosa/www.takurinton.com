@@ -1,3 +1,4 @@
+import _ from 'highlight.js/lib/languages/*';
 import marked from 'marked';
 import { Heading } from '../../component/common/atoms/Heading'
 import { HtmlHead } from '../../component/common/Head'
@@ -8,21 +9,24 @@ const { markdownStyle } = require('../../styles/markdown/dairyreport')
 
 export const Wiki = () => {
   const r: marked.Renderer = markdownStyle()
-  const wiki = require('../../../md/wiki.md')
+  // const requireMarkdown = require("require-markdown")
+  // const _wiki = require('../../../md/wiki.md')
+  // const _wiki = requireMarkdown("../../../md/wiki.md"); 
+  // console.log(_wiki)
   // マークダウンなぜか呼べなくてイライラしちゃった
-//   const wiki = ` 
-// # 見出し1
-// - hoge
-// - fuga
-// - poyo
-// - piyo
-//   - nest 
-//   - nest/hoge
+  const wiki = ` 
+# 見出し1
+- hoge
+- fuga
+- poyo
+- piyo
+  - nest 
+  - nest/hoge
 
-// ## 見出し2
-// ~~utikesi~~  
-// **strong**
-// `
+## 見出し2
+~~utikesi~~  
+**strong**
+`
   const md: string = marked(wiki, {renderer: r})
 
   return (

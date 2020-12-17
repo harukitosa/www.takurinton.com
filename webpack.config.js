@@ -43,37 +43,38 @@ module.exports = {
     }, {
       test: /\.css$/,
       loaders: ['style', 'css']
-    }, {
-      // これ無意味
-      //  use: ['html-loader', 'markdown-loader'] 
-      test: /\.md$/,
-      // loaders: ['html-lorder', 'markdown-loader', 'raw-loader']
-      use: [
-        {
-          loader: 'html-loader', 
-          options: {
-            esModule: true,
-          }
-        }, {
-          loader: 'markdown-loader', 
-          options: {
-            pedantic: true,
-            renderer,
-          }
-        }], 
-      exclude: /node_modules/,
-      // use: [
-      //   {
-      //     loader: 'babel-loader'
-      //   },
-      //   {
-      //     loader: '@mdx-js/loader',
-      //     options: {
-      //       remarkPlugins: [images, emoji]
-      //     }
-      //   }
-      // ]
-    }],
+    }, 
+    // {
+    //   // これ無意味
+    //   //  use: ['html-loader', 'markdown-loader'] 
+    //   test: /\.md$/,
+    //   // loaders: ['html-lorder', 'markdown-loader', 'raw-loader']
+    //   use: [
+    //     {
+    //       loader: 'html-loader', 
+    //       options: {
+    //         esModule: true,
+    //       }
+    //     }, {
+    //       loader: 'markdown-loader', 
+    //       options: {
+    //         pedantic: true,
+    //         renderer,
+    //       }
+    //     }], 
+    //   exclude: /node_modules/,
+    //   // use: [
+    //   //   {
+    //   //     loader: 'babel-loader'
+    //   //   },
+    //   //   {
+    //   //     loader: '@mdx-js/loader',
+    //   //     options: {
+    //   //       remarkPlugins: [images, emoji]
+    //   //     }
+    //   //   }
+    //   // ]
+    // }],
   },
   externals: {
     'react': 'React',

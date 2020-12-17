@@ -23,10 +23,11 @@ const nextConfig = {
   webpack: (config) => {
     config.module.rules.push({
       test: /\.md$/,
-      loader: 'frontmatter-markdown-loader',
-      options: { 
-        mode: ['react-component'] 
-      }, 
+      use: 'raw-loader'
+      // loader: 'frontmatter-markdown-loader',
+      // options: { 
+      //   mode: ['react-component'] 
+      // }, 
     })
     return config
   }
