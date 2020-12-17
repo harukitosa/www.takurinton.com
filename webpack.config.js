@@ -46,21 +46,32 @@ module.exports = {
     }, {
       // これ無意味
       //  use: ['html-loader', 'markdown-loader'] 
-      test: /\.md$/,
+      test: /\.mdx$/,
       // loaders: ['html-lorder', 'markdown-loader', 'raw-loader']
+      // use: [
+      //   {
+      //     loader: 'html-loader', 
+      //     options: {
+      //       esModule: true,
+      //     }
+      //   }, {
+      //     loader: 'markdown-loader', 
+      //     options: {
+      //       pedantic: true,
+      //       renderer: markdownRenderer
+      //     }
+      //   }]
       use: [
         {
-          loader: 'html-loader', 
+          loader: 'babel-loader'
+        },
+        {
+          loader: '@mdx-js/loader',
           options: {
-            esModule: true,
+            remarkPlugins: [images, emoji]
           }
-        }, {
-          loader: 'markdown-loader', 
-          options: {
-            pedantic: true,
-            renderer: markdownRenderer
-          }
-        }]
+        }
+      ]
     }],
   },
   externals: {

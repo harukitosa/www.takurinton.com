@@ -8,7 +8,7 @@ const { markdownStyle } = require('../../styles/markdown/dairyreport')
 
 export const Wiki = () => {
   const r: marked.Renderer = markdownStyle()
-  // const wiki = require('../../../md/wiki.md')
+  // const wiki = require('../../../md/wiki.mdx')
   // マークダウンなぜか呼べなくてイライラしちゃった
   const wiki = ` 
 # 見出し1
