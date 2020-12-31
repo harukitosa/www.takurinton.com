@@ -23,7 +23,7 @@ export const Sake = (res: {sake: string}) => {
           textAlign: 'center', 
           marginTop: '50px', 
         }}>
-        <Heading text="お酒" />
+        <Heading text="僕の好きなお酒" />
       </div>
        <div className={css.main} dangerouslySetInnerHTML={{ __html: md }} />
     </div>
@@ -36,7 +36,11 @@ Sake.getInitialProps = async () => {
 }
 
 const sake = ` 
-# お酒
+# よなよなエール
+
+# カシスオレンジ
+
+# 
 `
 
 export default Sake
