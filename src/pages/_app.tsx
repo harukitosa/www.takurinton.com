@@ -16,19 +16,19 @@ import '../styles/base.scss'
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
   if (process.browser) {
-    hotkeys('command+m', e => {
+    hotkeys('shift+m', e => {
       e.preventDefault() 
       router.replace('/')
     })
-    hotkeys('command+k', e => {
+    hotkeys('shift+k', e => {
         e.preventDefault() 
         router.replace('/kawaii')
     })
-    hotkeys('command+w', e => {
+    hotkeys('shift+w', e => {
       e.preventDefault() 
       router.replace('/wiki')
     })
-    hotkeys('command+a', e => {
+    hotkeys('shift+a', e => {
       e.preventDefault() 
       router.replace('/sake')
     })
