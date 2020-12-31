@@ -97,15 +97,13 @@ const App = ({ Component, pageProps }) => {
               margin: 0 auto;
               border: 0;
               outline: 0;
-              display: flex;
-              justify-content: center;
-              align-items: center;
               transition-duration: 500ms;
               transition-timing-function: ease-in-out;
               border-radius: 20px;
             }
             
             .content-after {
+              text-align: center;
               width: 70%;
               height: 40%;
               opacity: .7;
@@ -114,6 +112,20 @@ const App = ({ Component, pageProps }) => {
             
             .content-before {
               background-color: transparent;
+            }
+
+            .content-after h1 {
+              font-size: 2rem
+            }
+          
+            .content-box {
+              margin: 10px auto 0;
+              position: absolute;
+              right: 0;
+              left: 0;
+              text-align: left; 
+              font-size: 1.6rem;
+              width: 300px;
             }
           `}
         </style>
@@ -144,7 +156,17 @@ const App = ({ Component, pageProps }) => {
               }}
               closeTimeoutMS={500}
             >
-            <h1>ショートカットのヘルプホゲホゲ</h1>
+
+            <h1>基本的にはページ遷移のショートカットです</h1>
+            <div className="content-box">
+              <p>- shift+t: トップへ行く</p>
+              <p>- shift+k: 可愛いページへ</p>
+              <p>- shift+s: お酒のページへ</p>
+              <p>- shift+w: wikiへ</p>
+              <p>- shift+d: 日報へ</p>
+              <p>- shift+c: お問い合わせへ</p>
+            </div>
+            
         </Modal>
       </>
       );
