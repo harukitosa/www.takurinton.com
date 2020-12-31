@@ -8,6 +8,7 @@ export const Gopher = () => {
                 height: 280px;
                 right: 0;
                 left: 0;
+                z-index: -1;
                 background: #7fd5ea;
             }
             

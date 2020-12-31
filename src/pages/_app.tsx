@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "next/app";
 import { useRouter } from 'next/router';
 // import { Layout } from '../component/common/layout/Layout'
@@ -7,6 +7,7 @@ import { Error } from '../function/error/err'
 import { HtmlHead } from '../component/common/Head'
 
 import hotkeys from 'hotkeys-js'
+import Modal from 'react-modal'
 
 // @ts-ignore
 import '../styles/base.scss'
@@ -14,9 +15,10 @@ import '../styles/base.scss'
 // const pages = ['/', 'dairyreport', 'baka', 'kawaii', 'wiki']
 
 const App = ({ Component, pageProps }) => {
+  const [modal, setModal] = useState<boolean>(false)
   const router = useRouter()
   if (process.browser) {
-    hotkeys('shift+m', e => {
+    hotkeys('shift+t', e => {
       e.preventDefault() 
       router.replace('/')
     })
@@ -28,9 +30,21 @@ const App = ({ Component, pageProps }) => {
       e.preventDefault() 
       router.replace('/wiki')
     })
-    hotkeys('shift+a', e => {
+    hotkeys('shift+s', e => {
       e.preventDefault() 
       router.replace('/sake')
+    })
+    hotkeys('shift+d', e => {
+      e.preventDefault() 
+      router.replace('/dairyreport')
+    })
+    hotkeys('shift+c', e => {
+      e.preventDefault() 
+      router.replace('/contact')
+    })
+    hotkeys('h', e => {
+      e.preventDefault() 
+      setModal(true)
     })
   }
 
@@ -45,6 +59,64 @@ const App = ({ Component, pageProps }) => {
 
     return (
       <>
+        <style>
+          {`
+          .modal-base {
+              padding: 1rem;
+              position: fixed;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              left: 0;
+              opacity: 0;
+              transition-duration: 500ms;
+              transition-timing-function: ease-in-out;
+              outline: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            
+            .modal-after {
+              background-color: rgba(0, 0, 0, 0.8);
+              opacity: 1;
+            }
+            
+            .modal-before {
+              background-color: rgba(0, 0, 0, 0);
+              opacity: 0;
+            }
+            
+            .content-base {
+              padding: 20px;
+              position: relative;
+              top: auto;
+              left: auto;
+              right: auto;
+              bottom: auto;
+              margin: 0 auto;
+              border: 0;
+              outline: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition-duration: 500ms;
+              transition-timing-function: ease-in-out;
+              border-radius: 20px;
+            }
+            
+            .content-after {
+              width: 70%;
+              height: 40%;
+              opacity: .7;
+              background-color: #7fd5ea;
+            }
+            
+            .content-before {
+              background-color: transparent;
+            }
+          `}
+        </style>
         <Container>
         <HtmlHead 
             title={'たくりんとん'}
@@ -56,6 +128,24 @@ const App = ({ Component, pageProps }) => {
         <Header />
         {component}
         </Container> 
+      
+        <Modal 
+            isOpen={modal} 
+            onRequestClose={() => setModal(false)}
+            overlayClassName={{
+                base: "modal-base",
+                afterOpen: "modal-after",
+                beforeClose: "modal-before"
+              }}
+              className={{
+                base: "content-base",
+                afterOpen: "content-after",
+                beforeClose: "content-before"
+              }}
+              closeTimeoutMS={500}
+            >
+            <h1>ショートカットのヘルプホゲホゲ</h1>
+        </Modal>
       </>
       );
 }
