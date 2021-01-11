@@ -24,14 +24,24 @@
         text-decoration: none;
     }
     
-    table {
-        margin-left: 4%
-    }
     
     ul {
         line-height: 2;
         margin-left: 4%;
         margin-bottom: 1%;
+    }
+
+    li { 
+        margin-left: 5%;
+    }
+
+    table {
+        margin-left: 4%;
+        width: auto;
+    }
+    
+    table td {
+        word-break : break-all;
     }
     
     .content-img { 
@@ -46,11 +56,15 @@
         background-color: #f0f0f0;
     }
     code {
-        font-size: $h5;
+        font-size: $p;
     }
     
     @media (max-width: 800px) {
         width: 90%;
+
+        code {
+            font-size: $p;
+        }
     }
 
     @media screen and (max-width: 500px) {
