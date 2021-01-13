@@ -54,6 +54,14 @@ const wiki_ja = `
 - 所属: 金沢工業大学工学部情報工学科3年
 - 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
 
+# 自己紹介
+石川県で大学生をしています．Webのフロントエンドとバックエンドに興味があります．  
+最近ではgolangでWeb Assemblyを実装してみたり，webpackとexpressを使用したServer Side Renderingについての勉強をしています．  
+研究で機械学習を使用する予定なのでそちらの勉強も積極的に取り組んでいきたいと思っています．思っているだけです．  
+大学卒業後は東京でエンジニアとして就職予定です．  
+弱点は寒さとみぞおちです．優しくしてください．
+
+
 # 経歴
 - 2015年
   - 石川県 遊学館高等学校入学
@@ -88,6 +96,7 @@ const wiki_ja = `
 
 # 好き
 - ランニング
+- シーシャ
 - 散歩
 - 猫
 - ビール
@@ -95,10 +104,13 @@ const wiki_ja = `
 - お寿司
 - チキン南蛮
 - ラーメン
+- 埼玉
 
 # 嫌い 
 - 辛いもの
-- いじわる
+- エディタ戦争
+- 怖い人（居酒屋で騒ぐ人, ヤンキー, 不良, 高圧的な人など）
+- 寒さ
 
 # スキル(言語)
 - C
@@ -115,6 +127,7 @@ const wiki_ja = `
 - gin 
   - シンプルなルーティング（エンドポイント）の作成
   - APIサーバの作成
+  - ユーザーなどの認証の作成
 - AWS
   - route53
   - S3
@@ -177,9 +190,8 @@ const wiki_ja = `
   - [blog](https://www.takurinton.com/post/19)
 
 # サイト
-- [ポートフォリオ](https://www.takurinton.com/profile)
-- [ブログ](https://www.takurinton.com)
-- [日報](https://www.takurinton.com/dairyreport)
+- [ブログ](/)
+- [日報](/dairyreport)
 - [github](https://github.com/takurinton)
 - [wantedly](https://www.wantedly.com/id/takurinton)
 - [qiita](https://qiita.com/takurinton)
