@@ -5,7 +5,7 @@ import { HtmlHead } from '../../component/common/Head'
 const css = require('../../styles/markdown/wiki.scss')
 const { markdownStyle } = require('../../styles/markdown/dairyreport')
 
-export const Wiki = (res: {wiki: string}) => {
+export const Me = (res: {wiki: string}) => {
   const r: marked.Renderer = markdownStyle()
   // const requireMarkdown = require("require-markdown")
   // const _wiki: string = require('../../../md/wiki.md');
@@ -21,8 +21,8 @@ export const Wiki = (res: {wiki: string}) => {
   return (
     <div>
       <HtmlHead 
-        title={`たくりんとん | wiki`}
-        description={`wikiなのじゃ`}
+        title={`たくりんとん | about me`}
+        description={`about me`}
         image={'https://www.takurinton.com/me.jpeg'}
         url={'https://takurinton.com'}
       />
@@ -32,7 +32,7 @@ export const Wiki = (res: {wiki: string}) => {
           textAlign: 'center', 
           marginTop: '50px', 
         }}>
-        <Heading text="wiki" />
+        <Heading text="me" />
       </div>
        <div className={css.main} dangerouslySetInnerHTML={{ __html: md }} />
     </div>
@@ -40,7 +40,7 @@ export const Wiki = (res: {wiki: string}) => {
 }
 
 
-Wiki.getInitialProps = async (context:any) => {
+Me.getInitialProps = async (context:any) => {
   const lang:string = context.asPath.split('?').length === 1 ? '' : context.asPath.split('?')[1].split('=')[1]
   const wiki:string = lang === 'en' ? wiki_en : wiki_ja
   return { wiki: wiki }
@@ -147,7 +147,7 @@ const wiki_ja = `
 - インフラのスケーリングや最適化
 - 自動化(開発者目線)
 - フロントエンドのパフォーマンスチューニング
-- 日本語(これが一番難しい!!!)
+- 自前のSSR
 
 # インターンシップ 
 - **株式会社シスネクト**
@@ -193,7 +193,7 @@ const wiki_ja = `
 - nickname: takurinton
 - birth: November 23, 1999
 - belong: Kanazawa Institute of Technology computer science 3rd
-- Worked at hoge from 2022
+- Worked at VOYAGE GROUP from 2022
 
 # career
 - 2015
@@ -328,5 +328,4 @@ const wiki_ja = `
 - [instagram](https://www.instagram.com/___katayama___/)
 `
 
-
-export default Wiki
+export default Me
