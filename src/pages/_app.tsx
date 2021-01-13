@@ -26,9 +26,9 @@ const App = ({ Component, pageProps }) => {
         e.preventDefault() 
         router.replace('/kawaii')
     })
-    hotkeys('shift+w', e => {
+    hotkeys('shift+m', e => {
       e.preventDefault() 
-      router.replace('/wiki')
+      router.replace('/me')
     })
     hotkeys('shift+s', e => {
       e.preventDefault() 
@@ -162,7 +162,7 @@ const App = ({ Component, pageProps }) => {
               <p>- shift+t: トップへ行く</p>
               <p>- shift+k: 可愛いページへ</p>
               <p>- shift+s: お酒のページへ</p>
-              <p>- shift+w: wikiへ</p>
+              <p>- shift+m: 僕についてのページへ</p>
               <p>- shift+d: 日報へ</p>
               <p>- shift+c: お問い合わせへ</p>
             </div>

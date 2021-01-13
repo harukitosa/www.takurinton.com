@@ -11,11 +11,11 @@ export const Header = () => {
             <p className={css.page}>
                 <Link href="/contact"><a>contact</a></Link>
             </p>
-            <p className={css.page}>
+            {/* <p className={css.page}>
                 <Link href="/dairyreport"><a>dailyreport</a></Link>
-            </p>
+            </p> */}
             <p className={css.page}>
-                <Link href="/profile"><a>profile</a></Link>
+                <Link href="/me"><a>me</a></Link>
             </p>
         </div>
     )

@@ -5,7 +5,7 @@ import { HtmlHead } from '../../component/common/Head'
 const css = require('../../styles/markdown/wiki.scss')
 const { markdownStyle } = require('../../styles/markdown/dairyreport')
 
-export const Wiki = (res: {wiki: string}) => {
+export const Me = (res: {wiki: string}) => {
   const r: marked.Renderer = markdownStyle()
   // const requireMarkdown = require("require-markdown")
   // const _wiki: string = require('../../../md/wiki.md');
@@ -21,8 +21,8 @@ export const Wiki = (res: {wiki: string}) => {
   return (
     <div>
       <HtmlHead 
-        title={`たくりんとん | wiki`}
-        description={`wikiなのじゃ`}
+        title={`たくりんとん | about me`}
+        description={`about me`}
         image={'https://www.takurinton.com/me.jpeg'}
         url={'https://takurinton.com'}
       />
@@ -32,7 +32,7 @@ export const Wiki = (res: {wiki: string}) => {
           textAlign: 'center', 
           marginTop: '50px', 
         }}>
-        <Heading text="wiki" />
+        <Heading text="me" />
       </div>
        <div className={css.main} dangerouslySetInnerHTML={{ __html: md }} />
     </div>
@@ -40,7 +40,7 @@ export const Wiki = (res: {wiki: string}) => {
 }
 
 
-Wiki.getInitialProps = async (context:any) => {
+Me.getInitialProps = async (context:any) => {
   const lang:string = context.asPath.split('?').length === 1 ? '' : context.asPath.split('?')[1].split('=')[1]
   const wiki:string = lang === 'en' ? wiki_en : wiki_ja
   return { wiki: wiki }
@@ -53,6 +53,14 @@ const wiki_ja = `
 - 生年月日: 1999年11月23日
 - 所属: 金沢工業大学工学部情報工学科3年
 - 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
+
+# 自己紹介
+石川県で大学生をしています．Webのフロントエンドとバックエンドに興味があります．  
+最近ではgolangでWeb Assemblyを実装してみたり，webpackとexpressを使用したServer Side Renderingについての勉強をしています．  
+研究で機械学習を使用する予定なのでそちらの勉強も積極的に取り組んでいきたいと思っています．思っているだけです．  
+大学卒業後は東京でエンジニアとして就職予定です．  
+弱点は寒さとみぞおちです．優しくしてください．
+
 
 # 経歴
 - 2015年
@@ -88,6 +96,7 @@ const wiki_ja = `
 
 # 好き
 - ランニング
+- シーシャ
 - 散歩
 - 猫
 - ビール
@@ -95,10 +104,13 @@ const wiki_ja = `
 - お寿司
 - チキン南蛮
 - ラーメン
+- 埼玉
 
 # 嫌い 
 - 辛いもの
-- いじわる
+- エディタ戦争
+- 怖い人（居酒屋で騒ぐ人, ヤンキー, 不良, 高圧的な人など）
+- 寒さ
 
 # スキル(言語)
 - C
@@ -115,6 +127,7 @@ const wiki_ja = `
 - gin 
   - シンプルなルーティング（エンドポイント）の作成
   - APIサーバの作成
+  - ユーザーなどの認証の作成
 - AWS
   - route53
   - S3
@@ -147,7 +160,7 @@ const wiki_ja = `
 - インフラのスケーリングや最適化
 - 自動化(開発者目線)
 - フロントエンドのパフォーマンスチューニング
-- 日本語(これが一番難しい!!!)
+- 自前のSSR
 
 # インターンシップ 
 - **株式会社シスネクト**
@@ -177,9 +190,8 @@ const wiki_ja = `
   - [blog](https://www.takurinton.com/post/19)
 
 # サイト
-- [ポートフォリオ](https://www.takurinton.com/profile)
-- [ブログ](https://www.takurinton.com)
-- [日報](https://www.takurinton.com/dairyreport)
+- [ブログ](/)
+- [日報](/dairyreport)
 - [github](https://github.com/takurinton)
 - [wantedly](https://www.wantedly.com/id/takurinton)
 - [qiita](https://qiita.com/takurinton)
@@ -193,7 +205,7 @@ const wiki_ja = `
 - nickname: takurinton
 - birth: November 23, 1999
 - belong: Kanazawa Institute of Technology computer science 3rd
-- Worked at hoge from 2022
+- Worked at VOYAGE GROUP from 2022
 
 # career
 - 2015
@@ -328,5 +340,4 @@ const wiki_ja = `
 - [instagram](https://www.instagram.com/___katayama___/)
 `
 
-
-export default Wiki
+export default Me
