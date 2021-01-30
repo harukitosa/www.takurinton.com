@@ -17,13 +17,18 @@
 }
 
 .nextButton, .prevButton {
-    margin-bottom: 100px; 
+    padding: 5px 10px 7px;
     position: absolute; 
-    color: $button_color;
     font-weight: $thick;
     text-decoration: none;
     font-size: $h4;
     font-weight: $thick;
+    background: $theme_subtext;
+    color: white;
+    border-radius: 4px;
+    &:hover {
+        background: $pink_kawaii;
+    }
 }
 .nextButton {
     right: 0;
@@ -61,6 +66,9 @@
     h1 {
         font-size: $h4;
         color: $theme_text;
+        &:hover {
+            color: $pink_kawaii;
+        }
     }
 
     @media (max-width: 1024px) {
@@ -76,6 +84,16 @@
         color: $theme_text; 
         font-weight: $thick;
         text-decoration: none;
+    }
+
+    .category {
+        padding: 3px 8px 4px;
+        background: $theme_subtext;
+        color: white; 
+        border-radius: 2px;
+        &:hover {
+            background: $pink_kawaii;
+        }
     }
 
     p {

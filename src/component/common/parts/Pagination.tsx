@@ -1,6 +1,6 @@
 import { PageButton } from '../atoms/PageButton'
 
-const css = require('../../../styles/style/dairyreport.scss')
+const css = require('../../../styles/style/blog.scss')
 
 export const Pagination = ({ what = null, next = null, prev = null, category = null }) => {
     //@ts-ignore

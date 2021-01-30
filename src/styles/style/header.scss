@@ -15,6 +15,9 @@
         text-decoration: none;
         font-size: $h4;
         font-weight: $thick;
+        &:hover {
+            color: $pink_kawaii;
+        }
     }
 }
 .page {
@@ -26,6 +29,9 @@
         text-decoration: none;
         font-size: $h5;
         font-weight: $thick;
+        &:hover {
+            color: $pink_kawaii;
+        }
     }
 }
 @media (max-width: 800px) {
