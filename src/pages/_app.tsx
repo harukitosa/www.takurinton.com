@@ -136,7 +136,7 @@ const App = ({ Component, pageProps }) => {
             image={'https://www.takurinton.com/me.jpeg'}
             url={'https://www.takurinton.com'}
         />
-        <style>{`* { margin: 0; padding: 0; }`}</style>
+        <style>{`body { margin: 0; padding: 0 0 50px; }`}</style>
         <Header />
         {component}
         </Container> 
