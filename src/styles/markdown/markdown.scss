@@ -18,20 +18,20 @@
     p {
         line-height: 2.4; 
         margin-left: 4%;
+        font-weight: 600;
     }
     
     a {
         text-decoration: none;
+        color: $pink_kawaii;
     }
     
     
     ul {
         line-height: 2;
+        margin-left: 2%;
         margin-bottom: 1%;
-    }
-
-    li {
-        margin-left: 5%;
+        font-weight: 600;
     }
 
     table {
@@ -56,6 +56,7 @@
     }
     code {
         font-size: $p;
+        font-weight: $thick;
     }
     
     @media (max-width: 1024px) {
