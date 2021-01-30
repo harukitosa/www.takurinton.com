@@ -2,7 +2,7 @@ import _ from 'highlight.js/lib/languages/*';
 import marked from 'marked';
 import { Heading } from '../../component/common/atoms/Heading'
 import { HtmlHead } from '../../component/common/Head'
-const css = require('../../styles/markdown/wiki.scss')
+const css = require('../../styles/markdown/markdown.scss')
 const { markdownStyle } = require('../../styles/markdown/dairyreport')
 
 export const Me = (res: {wiki: string}) => {
@@ -48,11 +48,11 @@ Me.getInitialProps = async (context:any) => {
 
 const wiki_ja = ` 
 # 基本
-- 名前: 片山 拓海
-- HN: たくりんとん
-- 生年月日: 1999年11月23日
-- 所属: 金沢工業大学工学部情報工学科3年
-- 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
+- ### 名前: 片山 拓海
+- ### HN: たくりんとん
+- ### 生年月日: 1999年11月23日
+- ### 所属: 金沢工業大学工学部情報工学科3年
+- ### 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
 
 # 自己紹介
 石川県で大学生をしています．Webのフロントエンドとバックエンドに興味があります．  

@@ -31,4 +31,8 @@ input {
     font-size: $h5; 
     border: none;
     border-radius: 5px;
+
+    &:hover {
+        background: $pink_kawaii;
+    }
 }
