@@ -51,12 +51,13 @@
         padding: 10px;
         margin: 10px 0 10px 4%;
         overflow: auto;
-        font-family:"メイリオ", sans-serif;
-        background-color: #f0f0f0;
+        background-color: #2c2d3a;
+        border-radius: 5px;
     }
     code {
-        font-size: $p;
-        font-weight: $thick;
+        font-weight: 500;
+        color: white;
+        font-family:"SFMono-Regular","Consolas","Liberation Mono","Menlo",monospace,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     }
     
     @media (max-width: 1024px) {
