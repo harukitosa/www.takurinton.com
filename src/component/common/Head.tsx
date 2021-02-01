@@ -19,7 +19,8 @@ export const HtmlHead = ({ title, description, image, url }: HeadProps) => {
       <meta name="twitter:image" content={image} />
       <link rel="shortcut icon" href={"https://www.takurinton.com/me.jpeg"} />
       <link rel="apple-touch-icon" href={"https://www.takurinton.com/me.jpeg"} />
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/solarized-dark.min.css" />   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai-sublime.min.css" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
       </Head>
   )
 }
