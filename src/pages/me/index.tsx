@@ -188,6 +188,9 @@ const wiki_ja = `
   - 2週間のチーム開発
   - React/JavaScript, Django/Python
   - [blog](https://www.takurinton.com/post/19)
+- **株式会社VOYAGE GROUP**
+  - 2021/2 ~ ???
+  - 内定者インターン
 
 # サイト
 - [ブログ](/)
@@ -327,6 +330,9 @@ const wiki_ja = `
   - Team development
   - React/JavaScript, Django/Python
   - [blog](https://www.takurinton.com/post/19)
+- **VOYAGE GROUP Inc.**
+  - 2021/2 ~ ???
+  - Intern as an informal candidate
 
 
 # site
