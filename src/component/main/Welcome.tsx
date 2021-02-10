@@ -6,7 +6,7 @@ export const Welcome = () => {
     return (
         <div className={css.main}>
             <h1>たくりんとん</h1>
-            <p>GoとPythonが好きな大学生</p>
+            <p>石川県で活躍するスーパーニート</p>
             <Twitter />
             <GitHub />
             {/* <Facebook /> */}
