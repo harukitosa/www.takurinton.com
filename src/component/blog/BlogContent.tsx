@@ -8,12 +8,15 @@ export const BlogContent = (post: PostProps) => {
     const image = post.contents_image_url === '' ? 'https://www.takurinton.com/me.jpeg' : 'https://takurinton.com' + post.contents_image_url
     return (
         <div className={css.box}>
-            <Link href="/post/[id]" as={`/post/${post.id}`}>
+            <Link href="/post/[id]" as={`/post/${post.id}`} passHref>
+                <a>
                 <div className={css.content}>
                     {/* あとでbr消しておいてね */}
                     <img src={image} alt={post.title} /> <br /> 
                     <h1>{post.title}</h1>
                 </div>
+                </a>
+                
             </Link>
             <a href={`/?category=${post.category}`} className={css.category}>{post.category}</a>
             <p>{pubDate}</p>
