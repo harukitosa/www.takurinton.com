@@ -18,7 +18,11 @@ export const BlogContent = (post: PostProps) => {
                 </a>
                 
             </Link>
-            <a href={`/?category=${post.category}`} className={css.category}>{post.category}</a>
+            <Link href={`/?category=${post.category}`}>
+                <a className={css.category}>
+                    {post.category}
+                </a>
+            </Link>
             <p>{pubDate}</p>
         </div>
     )
