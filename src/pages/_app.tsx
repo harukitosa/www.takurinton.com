@@ -131,12 +131,6 @@ const App = ({ Component, pageProps }) => {
           `}
         </style>
         <Container>
-        <HtmlHead 
-            title={'たくりんとん'}
-            description={'たくりんとんのポートフォリオです'}
-            image={'https://www.takurinton.com/me.jpeg'}
-            url={'https://www.takurinton.com'}
-        />
         <style>{`body { margin: 0; padding: 0 0 50px; }`}</style>
         <Header />
         {component}
