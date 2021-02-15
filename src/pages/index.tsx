@@ -10,7 +10,7 @@ const Main = (res: {res: GetPost, status: number}) => {
             <HtmlHead 
                 title={`たくりんとん`}
                 description={`たくりんとんのポートフォリオです`}
-                image={`https://www.takurinton.com/`}
+                image={`https://www.takurinton.com/me.jpeg`}
                 url={`https://www.takurinton.com/`}
             />
             <Home />
