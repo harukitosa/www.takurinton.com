@@ -2,8 +2,6 @@ import Head from 'next/head';
 import { HeadProps } from '../../props/props'
 
 export const HtmlHead = ({ title, description, image, url }: HeadProps) => {
-  console.log(title);
-  console.log(url);
   return (
     <Head>
       <title>{title}</title>
