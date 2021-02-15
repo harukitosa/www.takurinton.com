@@ -2,9 +2,17 @@ import { Home } from '../component/main/Home'
 import { Blog } from '../component/blog/Blog'
 import { GetPost } from '../props/props'
 
+import { HtmlHead } from '../component/common/Head';
+
 const Main = (res: {res: GetPost, status: number}) => {
     return (
         <div>
+            <HtmlHead 
+                title={`たくりんとん`}
+                description={`たくりんとんのポートフォリオです`}
+                image={`https://www.takurinton.com/me.jpeg`}
+                url={`https://www.takurinton.com/`}
+            />
             <Home />
             <Blog props={res.res}/>
         </div>
