@@ -9,6 +9,7 @@ const css = require('../../styles/markdown/markdown.scss')
 const style = require('../../styles/style/blog.scss')
 
 export const BlogDetail = (props: {props: PostProps}) => {
+  const id = JSON.stringify(props.props.id);
   syntaxHighlight() 
   const r: marked.Renderer = markdownStyle()
   const md: string = marked(props.props.contents, {renderer: r})
@@ -20,7 +21,7 @@ export const BlogDetail = (props: {props: PostProps}) => {
         title={`たくりんとんのブログ | ${props.props.title}`}
         description={`${props.props.title}`}
         image={`https://takurinton.com${props.props.contents_image_url}`}
-        url={'https://takurinton.com'}
+        url={`https://takurinton.com/post/${id}`}
       />
       
       <div className={style.detail}>
