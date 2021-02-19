@@ -119,15 +119,27 @@
     padding: 0 0 5px;
     border-bottom: 2px solid rgb(221, 221, 221);
 
-    p, span {
+    .name, .date, .content {
+        padding-bottom: 10px;
+        font-weight: $thick;
         color: $theme_text;
     }
-    p {
-        padding-bottom: 10px;
-        font-size: $h4;
-        font-weight: $thick;
+
+    .name {
+        font-size: $h5;
     }
-    span {
-        font-size: $p;
+    
+    .date, .content {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 500px) {
+        .name {
+            font-size: 1rem;
+        }
+
+        .date, .content {
+            font-size: .8rem;
+        }
     }
 }
