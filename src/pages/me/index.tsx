@@ -92,7 +92,8 @@ const wiki_ja = `
   - 金沢工業大学卒業見込み
 
 # 研究
-- 明確に定まっているわけではありませんが、ソーシャルメディアを用いた株式の推移の予測を行う予定です。
+ソーシャルメディアを用いた株式の傾向の予測を行います．株式の傾向は実際のレートの他に有識者などによるソーシャルメディアでの発信によって左右されることがあります．  
+そこの関連性を引き出す研究を行います．
 
 # 好き
 - ランニング
@@ -240,7 +241,8 @@ const wiki_ja = `
   - Scheduled to graduate from Kanazawa Institute of Technology computer science
 
 # research
-- Maybe I plan to use social media to predict stock trends.
+Predict stock trends using social media. In addition to the actual rate, the stock trend may be influenced by the transmission on social media by experts.
+We will conduct research to bring out the relevance there.
 
 # like
 - running
