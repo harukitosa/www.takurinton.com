@@ -55,10 +55,10 @@ const wiki_ja = `
 - ### 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
 
 # 自己紹介
-石川県で大学生をしています．Webのフロントエンドとバックエンドに興味があります．  
-最近ではgolangでWeb Assemblyを実装してみたり，webpackとexpressを使用したServer Side Renderingについての勉強をしています．  
-研究で機械学習を使用する予定なのでそちらの勉強も積極的に取り組んでいきたいと思っています．思っているだけです．  
-大学卒業後は東京でエンジニアとして就職予定です．  
+石川県で大学生をしています．たくりんとんといいます．親しい友人からは代謝と呼ばれることもあります．  
+ソフトウェア全般に対して興味があり，特にWebのフロントエンド/サーバサイドに興味があります．  
+最近では趣味で preactjs や vitejs のコードを読んだり，インターン先でPHPのコードを書いています．  
+インフラの知識が皆無なのでこれから鍛えていきたいです．  
 弱点は寒さとみぞおちです．優しくしてください．
 
 
@@ -210,6 +210,13 @@ const wiki_ja = `
 - birth: November 23, 1999
 - belong: Kanazawa Institute of Technology computer science 3rd
 - Worked at VOYAGE GROUP from 2022
+
+# profile
+I am a university student in Ishikawa prefecture. My name is Takurinton. It is sometimes called metabo1ism by core / close friends.  
+I'm interested in software in general, especially the front end / server side of the Web.  
+Recently, I read preactjs and vitejs code as a hobby, and write PHP code at the internship.  
+I have no knowledge of infrastructure, so I would like to train from now on.  
+Weaknesses are cold and epigastrium. Please be kind.  
 
 # career
 - 2015
