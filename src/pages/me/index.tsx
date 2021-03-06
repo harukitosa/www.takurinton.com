@@ -88,6 +88,9 @@ const wiki_ja = `
   - 根上駅伝1区区間賞
   - VOYAGE GROUP内定
   - VOYAGE GROUP内定承諾
+- 2021年
+  - Vitejs 日本語翻訳チーム立ち上げ
+  - Vue-jp Organization
 - 2022年
   - 金沢工業大学卒業見込み
 
@@ -244,6 +247,9 @@ Weaknesses are cold and epigastrium. Please be kind.
   - Neagari Ekiden Winner 1st ward section prize
   - Job offerd from VOYAGE GROUP
   - Acceptance of job offer VOYAGE GROUP
+- 2021年
+  - Vitejs build vitejs japanese translation team
+  - Vue-jp Organization
 - 2022
   - Scheduled to graduate from Kanazawa Institute of Technology computer science
 
