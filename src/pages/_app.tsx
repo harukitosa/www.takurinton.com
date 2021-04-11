@@ -15,7 +15,7 @@ import '../styles/base.scss'
 // const pages = ['/', 'dairyreport', 'baka', 'kawaii', 'wiki']
 
 const App = ({ Component, pageProps }) => {
-  console.log('ばーか');
+  console.log('marina');
   const [modal, setModal] = useState<boolean>(false)
   const router = useRouter()
   if (process.browser) {
