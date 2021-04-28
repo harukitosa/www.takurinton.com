@@ -51,7 +51,7 @@ const wiki_ja = `
 - ### 名前: 片山 拓海
 - ### HN: たくりんとん
 - ### 生年月日: 1999年11月23日
-- ### 所属: 金沢工業大学工学部情報工学科3年
+- ### 所属: 金沢工業大学工学部情報工学科4年
 - ### 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
 
 # 自己紹介
@@ -214,7 +214,7 @@ const wiki_ja = `
 - name: Takumi Katayama
 - nickname: takurinton
 - birth: November 23, 1999
-- belong: Kanazawa Institute of Technology computer science 3rd
+- belong: Kanazawa Institute of Technology computer science 4th
 - Worked at VOYAGE GROUP from 2022
 
 # profile
