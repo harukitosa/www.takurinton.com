@@ -7,15 +7,6 @@ const { markdownStyle } = require('../../styles/markdown/dairyreport')
 
 export const Me = (res: {wiki: string}) => {
   const r: marked.Renderer = markdownStyle()
-  // const requireMarkdown = require("require-markdown")
-  // const _wiki: string = require('../../../md/wiki.md');
-  // console.log(_wiki)
-  // const _wiki = requireMarkdown("../../../md/wiki.md"); 
-  // マークダウンなぜか呼べなくてイライラしちゃった
-
-
-  // const wiki = lang === 'en' ? wiki_en : wiki_ja; 
-
   const md: string = marked(res.wiki, {renderer: r})
 
   return (
@@ -54,14 +45,6 @@ const wiki_ja = `
 - ### 所属: 金沢工業大学工学部情報工学科4年
 - ### 2022年新卒でVOYAGE GROUPにエンジニアとして入社します
 
-# 自己紹介
-石川県で大学生をしています．たくりんとんといいます．親しい友人からは代謝と呼ばれることもあります．  
-ソフトウェア全般に対して興味があり，特にWebのフロントエンド/サーバサイドに興味があります．  
-最近では趣味で preactjs や vitejs のコードを読んだり，インターン先でPHPのコードを書いています．  
-インフラの知識が皆無なのでこれから鍛えていきたいです．  
-弱点は寒さとみぞおちです．優しくしてください．
-
-
 # 経歴
 - 2015年
   - 石川県 遊学館高等学校入学
@@ -90,81 +73,9 @@ const wiki_ja = `
   - VOYAGE GROUP内定承諾
 - 2021年
   - Vitejs 日本語翻訳チーム立ち上げ
-  - Vue-jp Organization
+  - Vue-jp メンバー
 - 2022年
   - 金沢工業大学卒業見込み
-
-# 研究
-ソーシャルメディアを用いた株式の傾向の予測を行います．株式の傾向は実際のレートの他に有識者などによるソーシャルメディアでの発信によって左右されることがあります．  
-そこの関連性を引き出す研究を行います．
-
-# 好き
-- ランニング
-- シーシャ
-- 散歩
-- 猫
-- ビール
-- カシスオレンジ
-- お寿司
-- チキン南蛮
-- ラーメン
-- 埼玉
-
-# 嫌い 
-- 辛いもの
-- エディタ戦争
-- 怖い人（居酒屋で騒ぐ人, ヤンキー, 不良, 高圧的な人など）
-- 寒さ
-
-# スキル(言語)
-- C
-- Python
-- Go
-- JavaScript
-- html/css
-
-# スキル(ツール、フレームワーク、ミドルウェア)
-- Django
-  - 簡単なサイト作成
-  - APIサーバの開発
-  - ORMを使いこなします
-- gin 
-  - シンプルなルーティング（エンドポイント）の作成
-  - APIサーバの作成
-  - ユーザーなどの認証の作成
-- AWS
-  - route53
-  - S3
-  - EC2
-  - RDS
-  - ELB
-  - ALB
-  - (Lambda)
-- heroku
-  - デプロイ
-  - ポスグレの拡張の使用
-- SQL
-  - 簡単なレコードの作成
-  - N+1問題とは切っても切れない（勉強中）
-- 自作インタプリタ
-  - Goで作るインタプリタを読んで作ってみた、楽しかったので拡張中
-
-# わからんからこれからやりたい
-- TypeScript
-- Rust
-- Docker
-- k8s
-- ECS
-- webpack
-- babel
-- wasm
-- モバイルアプリ開発
-- 機械学習
-- 深層学習
-- インフラのスケーリングや最適化
-- 自動化(開発者目線)
-- フロントエンドのパフォーマンスチューニング
-- 自前のSSR
 
 # インターンシップ 
 - **株式会社シスネクト**
@@ -217,13 +128,6 @@ const wiki_ja = `
 - belong: Kanazawa Institute of Technology computer science 4th
 - Worked at VOYAGE GROUP from 2022
 
-# profile
-I am a university student in Ishikawa prefecture. My name is Takurinton. It is sometimes called metabo1ism by core / close friends.  
-I'm interested in software in general, especially the front end / server side of the Web.  
-Recently, I read preactjs and vitejs code as a hobby, and write PHP code at the internship.  
-I have no knowledge of infrastructure, so I would like to train from now on.  
-Weaknesses are cold and epigastrium. Please be kind.  
-
 # career
 - 2015
   - Enter Yugakkan High School
@@ -256,73 +160,6 @@ Weaknesses are cold and epigastrium. Please be kind.
 - 2022
   - Scheduled to graduate from Kanazawa Institute of Technology computer science
 
-# research
-Predict stock trends using social media. In addition to the actual rate, the stock trend may be influenced by the transmission on social media by experts.
-We will conduct research to bring out the relevance there.
-
-# like
-- running
-- walking
-- cat
-- beer 
-- cassis orange
-- sushi
-- chicken Nanban
-- ramen noodle
-
-# dislike 
-- spicy food 
-- spite
-
-# skill(language)
-- C
-- Python
-- Go
-- JavaScript
-- html/css
-
-# skill(tools, framework, middleware)
-- Django
-  - dev non SPA site
-  - dev API server
-  - use ORM
-- gin 
-  - simple routing
-  - dev API server
-- AWS
-  - route53
-  - S3
-  - EC2
-  - RDS
-  - ELB
-  - ALB
-  - (Lambda)
-- heroku
-  - deploy
-  - Postgres
-- SQL
-  - simple record
-  - N+1( ；∀；)
-- handmade language
-  - interpreter made of golang
-
-# wanna do cuz I don't understand
-- TypeScript
-- Rust
-- Docker
-- k8s
-- ECS
-- webpack
-- babel
-- wasm
-- mobile applcation dev
-- machine learning
-- deep learning
-- Infrastructure scaling/best practice
-- Automation(from developer's perspective)
-- performance tuning of frontend
-- Japanese(most defficult!!!)
-
 # internship 
 - **Sysnect Inc.**
   - 2020/02
@@ -351,7 +188,7 @@ We will conduct research to bring out the relevance there.
 - **VOYAGE GROUP Inc.**
   - 2021/02 ~ 2021/06(plans)
   - Intern as an informal candidate
-- **VOYAGE GROUP Inc.**
+- **PLAID Inc.**
   - 2021/07(plans) ~ ???
   - Frontend developer
 
