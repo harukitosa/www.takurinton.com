@@ -3,11 +3,11 @@ const getRSS = () => {
     .then(res => {
         return res.json()
         .then(json => {    
-            // content.contents.slice は邪悪なので早くサーバサイドを書き換えなさい。
+            // content.contents.slice はやばい
             const response = `<?xml version="1.0" encoding="UTF-8"?>
             <rss version='2.0'  xmlns:atom="http://www.w3.org/2005/Atom">
             <channel>
-            <atom:link href="https://www.takurinton.com/api" rel="self" type="application/rss+xml" />
+            <atom:link href="https://www.takurinton.com/api" type="application/rss+xml" />
             <title>たくりんとん</title>
             <link>https://www.takurinton.com</link>
             <description>たくりんとんのポートフォリオです</description>
@@ -17,7 +17,7 @@ const getRSS = () => {
             <image>
                 <url>https://www.takurinton.com/me.jpeg</url>
                 <title>たくりんとん</title>
-                <link>https://www.takurinton.com/</link>
+                <link>https://www.takurinton.com</link>
                 <width>32</width>
                 <height>32</height>
             </image>
