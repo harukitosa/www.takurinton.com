@@ -4,7 +4,7 @@ const getRSS = () => {
         return res.json()
         .then(json => {    
             // content.contents.slice は邪悪なので早くサーバサイドを書き換えなさい。
-            const response = `<?xml version="1.0" encoding="UTF-8"?>
+            const response = `<?xml version="1.0" encoding="US-ASCII"?>
             <rss version='2.0'  xmlns:atom="http://www.w3.org/2005/Atom">
             <channel>
             <atom:link href="https://www.takurinton.com/api" rel="self" type="application/rss+xml" />
