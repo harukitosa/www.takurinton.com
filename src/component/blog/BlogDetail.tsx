@@ -20,7 +20,8 @@ export const BlogDetail = (props: {props: PostProps}) => {
       <HtmlHead 
         title={`たくりんとんのブログ | ${props.props.title}`}
         description={`${props.props.title}`}
-        image={`https://takurinton.com${props.props.contents_image_url}`}
+        // image={`https://takurinton.com${props.props.contents_image_url}`}
+        image={`https://res.cloudinary.com/dtapptgdd/image/upload/w_1000/l_text:Sawarabi Gothic_70_bold:${props.props.title}/v1620370500/Screen_Shot_2021-05-07_at_15.54.47_extlvu.png`}
         url={`https://takurinton.com/post/${id}`}
       />
       
