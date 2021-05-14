@@ -45,10 +45,9 @@ export default function handler(req, res) {
     try {
         getRSS()
           .then((xml) => {
-              console.log('hoge')
             res.status(200);
             res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate'); // 24時間のキャッシュ
-            res.setHeader('Content-Type', 'text/xml');
+            res.setHeader('Content-Type', 'text/xml;charset=UTF-8');
             res.end(xml);
           })
           .catch((e) => {
