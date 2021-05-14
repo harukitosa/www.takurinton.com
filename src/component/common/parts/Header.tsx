@@ -15,7 +15,7 @@ export const Header = () => {
                 <Link href="/dairyreport"><a>dailyreport</a></Link>
             </p> */}
             <p className={css.page}>
-                <Link href="/memo"><a>memo</a></Link>
+                <Link href="https://dev.takurinton.com"><a>memo</a></Link>
             </p>
             <p className={css.page}>
                 <Link href="/me"><a>me</a></Link>
