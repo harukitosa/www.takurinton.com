@@ -38,7 +38,7 @@ Me.getInitialProps = async (context:any) => {
 }
 
 const wiki_ja = ` 
-# 基本
+# 情報
 - ### 名前: 片山 拓海
 - ### HN: たくりんとん
 - ### 生年月日: 1999年11月23日
@@ -118,6 +118,11 @@ const wiki_ja = `
 - [qiita](https://qiita.com/takurinton)
 - [facebook](https://www.facebook.com/takurinton)
 - [instagram](https://www.instagram.com/takurinton/)
+
+# 最近好きな歌
+<div style="margin-left: 30px; marigin-top: 50px;">
+<iframe src="https://open.spotify.com/embed/track/006u4CXVO2cusq08RrMElQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+</div>
 `
 
   const wiki_en = `
