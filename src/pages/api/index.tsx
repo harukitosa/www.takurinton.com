@@ -17,7 +17,7 @@ const getRSS = () => {
             <image>
                 <url>https://www.takurinton.com/me.jpeg</url>
                 <title>たくりんとん</title>
-                <link>https://www.takurinton.com/</link>
+                <link>https://www.takurinton.com</link>
                 <width>32</width>
                 <height>32</height>
             </image>
