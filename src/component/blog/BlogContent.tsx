@@ -11,19 +11,18 @@ export const BlogContent = (post: PostProps) => {
             <Link href="/post/[id]" as={`/post/${post.id}`} passHref>
                 <a>
                 <div className={css.content}>
-                    {/* あとでbr消しておいてね */}
-                    <img src={`https://res.cloudinary.com/dtapptgdd/image/upload/w_1000/l_text:Sawarabi Gothic_70_bold:${post.title}/v1620370500/Screen_Shot_2021-05-07_at_15.54.47_extlvu.png`} alt={post.title} /> <br /> 
                     <h1>{post.title}</h1>
+                    <Link href={`/?category=${post.category}`}>
+                        <a className={css.category}>
+                            {post.category}
+                        </a>
+                    </Link>
+                    <p className={css.pubDate}>{pubDate}</p>
+                    <p>{post.contents}</p>
                 </div>
                 </a>
-                
             </Link>
-            <Link href={`/?category=${post.category}`}>
-                <a className={css.category}>
-                    {post.category}
-                </a>
-            </Link>
-            <p>{pubDate}</p>
+            <hr />
         </div>
     )
 }
