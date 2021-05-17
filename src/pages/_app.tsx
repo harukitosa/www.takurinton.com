@@ -130,11 +130,9 @@ const App = ({ Component, pageProps }) => {
             }
           `}
         </style>
-        <Container>
         <style>{`body { margin: 0; padding: 0 0 50px; }`}</style>
         <Header />
         {component}
-        </Container> 
       
         <Modal 
             isOpen={modal} 
