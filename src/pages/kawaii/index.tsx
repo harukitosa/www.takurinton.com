@@ -12,7 +12,7 @@ export const Kawaii = (res: {kawaii: string}) => {
   return (
     <div>
       <HtmlHead 
-        title={`たくりんとん | 可愛いもの`}
+        title={`たくりんとん | 可愛いものが好きだと見せかけて実は辛いものも好き`}
         description={`kawaii`}
         image={'https://www.takurinton.com/me.jpeg'}
         url={'https://takurinton.com'}
@@ -137,6 +137,12 @@ const kawaii = `
 - CSSで書いた自作のぴえんは一生愛着を持って育てると誓ってる
 - 一生可愛いんだけど，どうしようかな　
 - これは国宝にすべきでは？
+
+# 都会の高層ビル群
+- 可愛すぎ
+
+# 河合塾
+- 可愛すぎ、日本を代表する可愛さ
 
 `
 

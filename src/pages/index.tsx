@@ -8,7 +8,7 @@ const Main = (res: {res: GetPost, status: number}) => {
     return (
         <div>
             <HtmlHead 
-                title={`たくりんとん`}
+                title={`たくりんとんです夜露死苦`}
                 description={`たくりんとんのポートフォリオです`}
                 image={`https://www.takurinton.com/me.jpeg`}
                 url={`https://www.takurinton.com/`}

@@ -12,7 +12,7 @@ export const Memo = (res: {memo: object}) => {
   return (
     <div>
       <HtmlHead 
-        title={`たくりんとん | memo`}
+        title={`たくりんとんのとんは道頓堀の道 | memo`}
         description={`memo`}
         image={'https://www.takurinton.com/me.jpeg'}
         url={'https://takurinton.com'}

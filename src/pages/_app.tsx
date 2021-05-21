@@ -15,7 +15,8 @@ import '../styles/base.scss'
 // const pages = ['/', 'dairyreport', 'baka', 'kawaii', 'wiki']
 
 const App = ({ Component, pageProps }) => {
-  console.log('まりなしか勝たん');
+  console.log('まりなしかカタン');
+  console.log("『カタンの開拓者たち』、または『カタン』は、ドイツで生まれたボードゲームである。1995年にコスモス社から販売された。作者はクラウス・トイバー。プレイ人数は3人または4人だが、2人用の特別ルールも設定されている。のちに「5〜6人用拡張セット」が発売された")
   const [modal, setModal] = useState<boolean>(false)
   const router = useRouter()
   if (process.browser) {

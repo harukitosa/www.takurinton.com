@@ -7,7 +7,7 @@ const Mine101Contents = (props: { res:Mine101ContentProps[] }) => {
         <div style={{textAlign: 'center', marginTop: '60px'}}>
             <HtmlHead
                 title="たくりんとん | 101のこと"
-                 description="たくりんとんを表す101のこと"
+                 description="たくりんとんを表す101と103は双子素数"
                  image="https://www.takurinton.com/me.jpeg" 
                  url="https://www.takurinton.com"
             />
@@ -22,7 +22,7 @@ const Mine101Contents = (props: { res:Mine101ContentProps[] }) => {
                     }
                 `}
             </style>
-            <h1 style={{ fontSize: '2rem'}}>僕を表す101キーワード</h1>
+            <h1 style={{ fontSize: '2rem'}}>僕を表す1.01キーワード</h1>
             <div className="main">
                 {
                     props.res.map(m => <Mine101Content {...m} />)

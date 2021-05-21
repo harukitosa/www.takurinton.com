@@ -42,18 +42,18 @@ const getRSS = () => {
 }
 
 export default function handler(req, res) {
-    try {
-        getRSS()
-          .then((xml) => {
-            res.status(200);
-            res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate'); // 24時間のキャッシュ
-            res.setHeader('Content-Type', 'text/xml;charset=UTF-8');
-            res.end(xml);
-          })
-          .catch((e) => {
-            throw console.error(e);
-          });
-      } catch (e) {
-        res.status(500).send("internal server error");
-      }
+    // try {
+    //     getRSS()
+    //       .then((xml) => {
+    //         res.status(200);
+    //         res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate'); // 24時間のキャッシュ
+    //         res.setHeader('Content-Type', 'text/xml;charset=UTF-8');
+    //         res.end(xml);
+    //       })
+    //       .catch((e) => {
+    //         throw console.error(e);
+    //       });
+    //   } catch (e) {
+    res.status(500).send("internal server error");
+      // }
 }

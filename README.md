@@ -1,6 +1,6 @@
 # ポートフォリオ
 
-わいわい  
+みかんがみっかんね〜〜〜〜
 
 ![](https://github.com/takurinton/portfolio/blob/master/images/lightouse.png)
 
@@ -44,17 +44,17 @@
   - props.ts
     - 共通のinterfaceを全て入れてここから適宜呼び出している
 - styles/
-  - スタイルを入れている
+  - スタイルを入れてくスタイル
   - theme.scssではカラーテーマやフォントサイズなどの共通の設定をしている
   - 青とピンクをベースカラーとして選定
   - あとは基本的に白と黒
 - hooks/
   - useComment.ts
-    - コメント投稿のpost requestを投げるためのフック
-    - 状態管理がメイン
+    - コメント投稿のpost requestを投げるためのフック船長
+    - 状態管理がメインディッシュ
   - useContact.ts
-    - お問い合わせ投稿のpost requestを投げるためのフック
-    - 状態管理がメイン
+    - お問い合わせ投稿のpost requestを投げるためのフック船長
+    - 状態管理がメインディッシュ
 - function/
   - api/
     - comment/
@@ -72,6 +72,7 @@
       - Frontend Studyでフロントエンドの守備範囲が今後増えると聞いたので、それを実際に体験してみようということで少しアウトプットを兼ねて実装してみた
       - まだまだ準備段階なのでもっと洗練していきたい
       - 研究ではNLPをやる予定なのでその練習？
+      - NLPやっていき
     - recognition.ts
       - ブラウザから音声を拾って文字起こしをするための処理
       - これChromeとedgeでしか使えないけど面白い機能
