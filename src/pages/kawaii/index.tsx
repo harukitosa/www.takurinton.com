@@ -12,7 +12,7 @@ export const Kawaii = (res: {kawaii: string}) => {
   return (
     <div>
       <HtmlHead 
-        title={`たくりんとん | 可愛いものが好きだと見せかけて実は辛いものも好き`}
+        title={`たくりんとん | まりにゃんが好き`}
         description={`kawaii`}
         image={'https://www.takurinton.com/me.jpeg'}
         url={'https://takurinton.com'}
