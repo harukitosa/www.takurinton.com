@@ -15,36 +15,36 @@ import '../styles/base.scss'
 // const pages = ['/', 'dairyreport', 'baka', 'kawaii', 'wiki']
 
 const App = ({ Component, pageProps }) => {
-  console.log('marina');
+  console.log('しゅんやしか勝たん');
   const [modal, setModal] = useState<boolean>(false)
   const router = useRouter()
   if (process.browser) {
     hotkeys('shift+t', e => {
-      e.preventDefault() 
+      e.preventDefault()
       router.replace('/')
     })
     hotkeys('shift+k', e => {
-        e.preventDefault() 
+        e.preventDefault()
         router.replace('/kawaii')
     })
     hotkeys('shift+m', e => {
-      e.preventDefault() 
+      e.preventDefault()
       router.replace('/me')
     })
     hotkeys('shift+s', e => {
-      e.preventDefault() 
+      e.preventDefault()
       router.replace('/sake')
     })
     hotkeys('shift+d', e => {
-      e.preventDefault() 
+      e.preventDefault()
       router.replace('/dairyreport')
     })
     hotkeys('shift+c', e => {
-      e.preventDefault() 
+      e.preventDefault()
       router.replace('/contact')
     })
     hotkeys('h', e => {
-      e.preventDefault() 
+      e.preventDefault()
       setModal(true)
     })
   }
@@ -55,7 +55,7 @@ const App = ({ Component, pageProps }) => {
         jssStyles.parentElement.removeChild(jssStyles);
       }
     }, []);
-    
+
     const component = pageProps.status >= 400 ?  <Error status={pageProps.status} /> : <Component {...pageProps} />
 
     return (
@@ -77,17 +77,17 @@ const App = ({ Component, pageProps }) => {
               justify-content: center;
               align-items: center;
             }
-            
+
             .modal-after {
               background-color: rgba(0, 0, 0, 0.8);
               opacity: 1;
             }
-            
+
             .modal-before {
               background-color: rgba(0, 0, 0, 0);
               opacity: 0;
             }
-            
+
             .content-base {
               padding: 20px;
               position: relative;
@@ -102,7 +102,7 @@ const App = ({ Component, pageProps }) => {
               transition-timing-function: ease-in-out;
               border-radius: 20px;
             }
-            
+
             .content-after {
               text-align: center;
               width: 70%;
@@ -110,7 +110,7 @@ const App = ({ Component, pageProps }) => {
               opacity: .7;
               background-color: #7fd5ea;
             }
-            
+
             .content-before {
               background-color: transparent;
             }
@@ -118,13 +118,13 @@ const App = ({ Component, pageProps }) => {
             .content-after h1 {
               font-size: 2rem
             }
-          
+
             .content-box {
               margin: 10px auto 0;
               position: absolute;
               right: 0;
               left: 0;
-              text-align: left; 
+              text-align: left;
               font-size: 1.6rem;
               width: 300px;
             }
@@ -133,9 +133,9 @@ const App = ({ Component, pageProps }) => {
         <style>{`body { margin: 0; padding: 0 0 50px; }`}</style>
         <Header />
         {component}
-      
-        <Modal 
-            isOpen={modal} 
+
+        <Modal
+            isOpen={modal}
             onRequestClose={() => setModal(false)}
             overlayClassName={{
                 base: "modal-base",
@@ -159,7 +159,7 @@ const App = ({ Component, pageProps }) => {
               <p>- shift+d: 日報へ</p>
               <p>- shift+c: お問い合わせへ</p>
             </div>
-            
+
         </Modal>
       </>
       );
