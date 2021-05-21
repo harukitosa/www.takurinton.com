@@ -1,6 +1,6 @@
 # ポートフォリオ
 
-わいわい  
+わいわいは許していません
 
 ![](https://github.com/takurinton/portfolio/blob/master/images/lightouse.png)
 
